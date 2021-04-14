@@ -11,6 +11,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './components/home/home.component';
 import { CategoriasComponent } from './components/categorias/categorias.component';
+import { DetalleProductoComponent } from './components/detalle-producto/detalle-producto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    CategoriasComponent
+    CategoriasComponent,
+    DetalleProductoComponent
   ],
   imports: [
     BrowserModule,
