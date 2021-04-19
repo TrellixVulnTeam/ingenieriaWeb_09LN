@@ -1,0 +1,19 @@
+<table>
+     <tr>
+         <th>Id</th>
+         <th>Nombres</th>
+         <th>Apellidos</th>
+         <th>País</th>
+         <th>Ciudad</th>
+         <th>Fecha Nacimiento</th>
+     </tr>
+     <tr *ngFor="let item of Lista">
+         <td><a [routerLink]="['/userprofile',item.id]" routerLinkActive="router-link-active" >{{item.id}}</a></td>
+         <td>{{item.nombre}}</td>
+         <td>{{item.apellidos}}</td>
+         <td>{{item.pais}}</td>
+         <td>{{item.ciudad}}</td>
+         <td>{{item.fechaNacimiento}}</td>
+     </tr>
+
+</table>

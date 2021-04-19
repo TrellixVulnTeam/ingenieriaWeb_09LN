@@ -1,7 +1,9 @@
 <nav>
      <div id='logo'>LOGO</div>
     <ul>
-         <li><button mat-flat-button>Dashboard</button></li>
-         <li><button mat-flat-button>Perfil del Usuario</button></li>
-    </ul>
+         <li><a [routerLink]="['/']" routerLinkActive="router-link-active" ><button mat-flat-button>Dashboard</button></a></li>
+         <li><a [routerLink]="['/userprofile']" routerLinkActive="router-link-active"> <button mat-flat-button>Perfil del Usuario</button></a></li>
+         <li><a [routerLink]="['/']" routerLinkActive="router-link-active"> <button mat-flat-button>Lista Usuarios</button></a></li>
+
+     </ul>
 </nav>
