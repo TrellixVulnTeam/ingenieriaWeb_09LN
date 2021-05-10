@@ -19,6 +19,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatIconModule} from '@angular/material/icon';
 import {ReactiveFormsModule} from '@angular/forms';
 
+import {HttpClientModule} from '@angular/common/http';
+import { BuscarPipe } from './pipes/buscar.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     HomeComponent,
     PrincipalComponent,
     UserprofileComponent,
-    ListaUsuariosComponent
+    ListaUsuariosComponent,
+    BuscarPipe
   ],
   imports: [
     BrowserModule,
@@ -39,7 +43,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     MatIconModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
