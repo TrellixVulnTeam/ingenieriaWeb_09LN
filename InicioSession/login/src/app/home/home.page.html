@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Inicio Sesión
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   {{mensaje}}
+     <form [formGroup]="formulario" (ngSubmit)="ValidarLogin()">
+       <ul>
+         <li>
+           <input type='text' formControlName="usuario" placeholder="Usuario" class="form-control">
+         </li>
+         <li>
+          <input type='text' formControlName="password" placeholder="Password" class="form-control">
+        </li>
+        <li>
+          <button type="submit" [disabled]="formulario.invalid" >Iniciar Sessión</button>
+        </li>
+      </ul>
+     </form>
+     
+
+
+</ion-content>
