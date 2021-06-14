@@ -5,6 +5,7 @@ import {Router} from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
+
 export class StorageService {
   private localStorageService;
   private currentSession:Session=null;
@@ -35,9 +36,9 @@ export class StorageService {
     this.router.navigate(['/home']);
   }
 
+
   Autenticado(): boolean {
     return (this.getCurrentUser() != null) ? true : false;
   };
-
 
 }
