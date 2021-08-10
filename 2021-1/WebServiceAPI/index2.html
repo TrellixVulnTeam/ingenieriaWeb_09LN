@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+      <img src='' id='imagen'><input type='text' id='codigo'>
+      <button id='boton'>Enviar</button>
+      
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+ <script>
+  $("#boton").on('click',function(){
+        if($('#codigo').val()==texto) console.log("es igual");
+        else console.log("no es igual" + texto);
+  });
+
+
+   Generar();
+ var texto="";
+
+ function GenerarClave(){
+        
+      var caracteres="ABCDFGEH123456778";
+      var longitud=5;
+      var codigo="";
+      for(var i=0;i<longitud;i++){
+           aleatorio=Math.random()*caracteres.length;
+           codigo+=caracteres.substr(aleatorio,1);
+      }
+
+      return codigo;
+ }
+
+ function Generar(){
+            Textoclave=GenerarClave();
+            const settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "https://password-and-captcha-generator.p.rapidapi.com/generateCaptcha?text="+Textoclave+"&width=160&height=60",
+                "method": "GET",
+                "headers": {
+                    "x-rapidapi-key": "5794f1a6fcmshcced48b6e9cb43ap18fadbjsnf7e959d5bee8",
+                    "x-rapidapi-host": "password-and-captcha-generator.p.rapidapi.com"
+                }
+            };
+            $.ajax(settings).done(function (response) {
+                var imagen="data:image/png;base64,"+response.captcha;
+                $("#imagen").attr('src',imagen);
+                texto=response.text;
+            });
+ }
+
+   </script>
+
+        
+
+    </body>
+</html>

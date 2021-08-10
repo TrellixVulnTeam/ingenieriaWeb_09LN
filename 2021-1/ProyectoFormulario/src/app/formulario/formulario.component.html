@@ -1,0 +1,8 @@
+<form [formGroup]="formulario" (ngSubmit)="EnviarDatos()" novalidate>
+      <ul>
+        <li><input type="number" formControlName="id" placeholder="ID"></li>
+        <li><input type="text" formControlName="nombre"  placeholder="Nombre"></li>
+        <li><input type="text" formControlName="genero" placeholder="Género"></li>
+        <li><button type="submit">Enviar</button></li>
+      </ul>
+</form>

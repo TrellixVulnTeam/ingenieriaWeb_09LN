@@ -1,0 +1,15 @@
+ul#productos{
+    list-style-type: none;
+    display:flex;
+    flex-direction: row;
+}
+ul#productos li a{
+    text-decoration: none;
+    color:black;
+}
+
+
+.precio{
+    color:red;
+    font-weight: bold;
+}

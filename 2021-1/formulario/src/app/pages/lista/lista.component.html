@@ -1,0 +1,19 @@
+<form [formGroup]="formulario" (ngSubmit)="Adicionar()" novalidate>
+  <ul id="lista">
+      <li *ngFor="let item of lista">{{item}}</li>
+  </ul>
+
+  <div *ngIf="nombre.errors && (nombre.dirty || nombre.touched)">
+    <div *ngIf="nombre.hasError('required')">El campo es obligatorio</div>
+    <div *ngIf="nombre.hasError('maxlength')">El maximo</div>
+ </div>
+
+    <ul>
+       
+      <li><input id="nombre" formControlName="nombre"></li>
+      <li><button type="submit" [disabled]="formulario.invalid">Adicionar</button>
+        
+        <button type="button" (click)="Eliminar()" >Eliminar</button></li>
+    </ul>
+
+</form>
