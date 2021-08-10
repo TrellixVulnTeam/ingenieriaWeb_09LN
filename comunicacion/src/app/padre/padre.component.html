@@ -1,9 +1,0 @@
-<h1>padre works!</h1>
-<!--<app-hijo [usuarioChild]="usuarioPadre"></app-hijo>-->
-<ul>
-     <li *ngFor="let item of items">
-         {{item}}
-     </li>
-</ul>
-
-<app-hijo  (propagar)="addItem($event)"></app-hijo>
