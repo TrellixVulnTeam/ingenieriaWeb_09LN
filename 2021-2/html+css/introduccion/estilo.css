@@ -1,0 +1,13 @@
+ul#lista1{
+	list-style-type: none;
+	width: 1024px;
+}
+
+ul#lista1 li{
+	float: left;
+	padding: 10px;
+}
+
+ul#lista2{
+	clear: both;
+}
