@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Animación con steps y sprites</title> 
+    <!--[if lt IE 9]> 
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]-->
+    <style> 
+    @keyframes mario {
+        from {
+                background-position: 0px;
+        }
+
+        to {
+                background-position: -1280px;
+        }
+    }
+
+    @-ms-keyframes mario {
+        from {
+                background-position: 0px;
+        }
+
+        to {
+                background-position: -1280px;
+        }
+    }
+
+    @-o-keyframes mario {
+        from {
+                background-position: 0px;
+        }
+
+        to {
+                background-position: -1280px;
+        }
+    }
+
+    @-webkit-keyframes mario {
+        from {
+                background-position: 0px;
+        }
+
+        to {
+                background-position: -1280px;
+        }
+    }
+
+    @-moz-keyframes mario {
+        from {
+                background-position: 0px;
+        }
+
+        to {
+                background-position: -1280px;
+        }
+    }
+
+    .caja {
+        width: 80px;
+        height: 120px;
+        background-image: url("mario/mario-sprite.jpg");
+        -ms-animation: mario 2s steps(16, end) infinite;
+        -webkit-animation: mario 2s steps(16, end) infinite;
+        -moz-animation: mario 2s steps(16, end) infinite;
+        -o-animation: mario 2s steps(16, end) infinite;
+        animation: mario 2s steps(16, end) infinite;
+    }
+    </style>
+
+<script>
+
+function startAnimation() {
+    document.getElementById("caja").style.MsAnimationPlayState = "running";
+    document.getElementById("caja").style.webkitAnimationPlayState = "running";
+    document.getElementById("caja").style.MozAnimationPlayState = "running";
+    document.getElementById("caja").style.OAnimationPlayState = "running";
+    document.getElementById("caja").style.animationPlayState = "running";
+}
+
+function stopAnimation() {
+    document.getElementById("caja").style.MsAnimationPlayState = "paused";
+    document.getElementById("caja").style.webkitAnimationPlayState = "paused";
+    document.getElementById("caja").style.MozAnimationPlayState = "paused";
+    document.getElementById("caja").style.OAnimationPlayState = "paused";
+    document.getElementById("caja").style.animationPlayState = "paused";
+}
+
+</script>
+
+</head>
+<body>
+    <div id="caja" class="caja">
+    </div>
+    <!-- caja es donde se verá la animación -->
+    
+    <button id="Pausar" name="Pausar" onclick="stopAnimation()">Pausar</button>
+    
+    <button id="Animar" name="Animar" onclick="startAnimation()">Animar</button>
+    
+</body>
+</html>

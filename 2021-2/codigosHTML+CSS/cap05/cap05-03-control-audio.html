@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Control de Audio</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+</head> 
+<body> 
+
+    <audio controls id="sonido" preload="auto"> 
+        <source src="archivo.ogg" type="audio/ogg"> 
+        <source src="archivo.mp3" type="audio/mp3"> 
+        <source src="archivo.aac" type="audio/mp4"> 
+ 
+            <p><a href="archivo.mp3">Descargar el audio</a></p> 
+    </audio> 
+    
+     <button id="boton" onclick="intercambiar()">Reproducir/Pausar</button> 
+ 
+<script> 
+function intercambiar() { 
+ var audio = document.getElementById("sonido");  
+ var boton = document.getElementById("boton"); 
+ 
+ if (audio.paused) { 
+   audio.play(); 
+   boton.innerHTML = "Pausar"; 
+ }  else { 
+   audio.pause(); 
+   boton.innerHTML ="Reproducir"; 
+ } 
+} 
+</script> 
+
+</body> 
+</html> 

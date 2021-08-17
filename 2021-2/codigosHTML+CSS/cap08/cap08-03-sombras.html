@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Sombras</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+        
+   .sombra { 
+       width: 300px;
+       border:1px solid black;
+       box-shadow: 10px 5px; 
+       font-size: 2em;
+       padding: 1em;
+       margin:20px;
+   } 
+        
+    .sombra2{ 
+        width: 300px;
+        border:1px solid black;
+        box-shadow: 10px 10px 5px #999; 
+        font-size: 2em;
+        padding: 1em;
+        margin:20px;
+    } 
+    
+    .sombra3{ 
+        width: 300px;
+        border:1px solid black;
+        box-shadow: inset 10px 10px 20px #999;
+        font-size: 2em;
+        padding: 1em;
+        margin:20px;
+    } 
+
+         
+    .caja{ 
+        position:relative; 
+        width:300px;
+        height: 200px;
+        background-color: gray;
+        margin:30px;
+        padding: 1em;
+        font-size: 2em;
+    }
+        
+    .caja:before{ 
+        content: " "; 
+        position: absolute;  
+        z-index: -1;  
+        top: 10px; 
+        left: 5px; 
+        width: 60%; 
+        height: 100px; 
+        box-shadow: -7px 0 10px #555;
+        transform: rotate(-5deg); 
+    } 
+
+    </style>
+</head> 
+<body> 
+
+    <div class="sombra">Esta caja tiene una sombra desplazada 10 pixeles a la derecha y 5 hacia abajo.</div>
+
+    <div class="sombra2">Esta caja tiene una sombra desplazada 10 pixeles a la derecha y abajo, un radio de blur de 5px y un color gris.</div>
+
+    <div class="sombra3">Esta caja tiene una sombra similar a la anterior, pero con más blur y hacia adentro.</div>
+    
+    
+    <div class="caja">Sombra lateral</div>
+
+</body> 
+</html> 

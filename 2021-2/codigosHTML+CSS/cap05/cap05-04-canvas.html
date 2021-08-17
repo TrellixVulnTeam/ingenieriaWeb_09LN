@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Canvas</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+</head> 
+<body> 
+
+<canvas id="lienzo" width="500" height="260"></canvas> 
+ 
+<script> 
+ var contexto = document.getElementById("lienzo").getContext("2d"); 
+ contexto.fillStyle = 'rgba(54, 54, 0, 0.5)'; 
+ contexto.fillRect(300, 25, 100, 100); 
+ contexto.beginPath(); 
+ contexto.arc(300, 10, 114, Math.PI * 1/2, Math.PI * 3/2); 
+ contexto.lineWidth = 15; 
+ contexto.lineCap = 'round'; 
+ contexto.strokeStyle = 'rgba(153, 127, 0, 0.5)'; 
+ contexto.stroke(); 
+</script> 
+
+
+</body> 
+</html> 

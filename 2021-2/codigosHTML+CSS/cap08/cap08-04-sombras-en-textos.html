@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Sombras en textos</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+        
+   .sombra{ 
+       width: 300px;
+       border:1px solid black;
+       text-shadow: 10px 10px 5px #999;
+       font-size: 2em;
+       padding: 1em;
+       margin:20px;
+   } 
+        
+    .sombra2{ 
+        width: 300px;
+        border:1px solid black;
+        color:white;
+        text-shadow: 0px 0px 10px black; 
+        font-size: 2em;
+        padding: 1em;
+        margin:20px;
+    } 
+    
+    .sombra3{ 
+        width: 300px;
+        border:1px solid black;
+        color:transparent;
+        text-shadow: 0px 0px 10px black;
+        font-size: 2em;
+        padding: 1em;
+        margin:20px;
+    } 
+        
+     .sombra4{ 
+        width: 300px;
+        border:1px solid black;
+        text-shadow: 2px 3px 3px #666; 
+        font-size: 3em;
+        padding: 1em;
+        margin:20px;
+    } 
+
+     .sombra5{ 
+        width: 300px;
+        border:1px solid black;
+          text-shadow: 0.2em 0.5em 0.1em #999, 
+                      -0.3em 0.1em 0.1em #000, 
+                       0.4em 03em 01em #333; 
+        font-size: 3em;
+        padding: 1em;
+        margin:20px;
+    } 
+        
+    .relieve { 
+        color:white;
+        text-shadow: -1px -1px white, 1px 1px #333; 
+        font-size: 4em;
+    } 
+
+    .bajorrelieve { 
+        color:white;
+        text-shadow: 1px 1px white, -1px -1px #333;  
+        font-size: 4em;
+    } 
+        
+    .texto3d{  
+        font-size: 6em;
+        color: white;
+        text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9, 
+               0 3px 0 #bbb, 
+               0 4px 0 #b9b9b9, 
+               0 5px 0 #aaa, 
+               0 6px 1px rgba(0,0,0,.1), 
+               0 0 5px rgba(0,0,0,.1), 
+               0 1px 3px rgba(0,0,0,.3), 
+               0 3px 5px rgba(0,0,0,.2), 
+               0 5px 10px rgba(0,0,0,.25), 
+               0 10px 10px rgba(0,0,0,.2), 
+               0 20px 20px rgba(0,0,0,.15); 
+    } 
+ 
+    .contorno{  
+        font-size: 6em;
+        color: white;
+        text-shadow: -1px 0 black,  
+                    0 1px black, 
+                    1px 0 black,  
+                    0 -1px black; 
+    } 
+
+    </style>
+</head> 
+<body> 
+
+    <div class="sombra">Esta caja tiene sombra en sus textos.</div>
+
+    <div class="sombra2">Esta caja tiene sombra en sus textos.</div>
+
+    <div class="sombra3">Esta caja tiene sombra en sus textos.</div>
+    
+    <div class="sombra4">Doble sombra</div>
+    
+    <div class="sombra5">Sombras</div>
+    
+    <div class="relieve">Relieve</div>
+    
+    <div class="bajorrelieve">Bajorrelieve</div>
+    
+    <div class="texto3d">EFECTO 3D</div>
+    
+    <div class="contorno">Contorno</div>
+    
+
+</body> 
+</html> 

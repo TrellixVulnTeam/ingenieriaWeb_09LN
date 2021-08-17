@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Nuevos controles de formulario</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+  
+    <style>
+    input[type=tel]{ 
+        background:url(telefono.jpg) no-repeat center right; 
+    } 
+        
+    input:focus{  
+        background-color:gray; 
+    } 
+
+    input:invalid{  
+        color:red; 
+    }
+    
+    input:valid{ 
+        color: green; 
+    } 
+
+    input:required{  
+        border: 3px solid #F00;  
+    } 
+    
+    input:optional{  
+        border: 3px solid #999;  
+    } 
+        
+    input:in-range{  
+        color: gray;  
+    } 
+        
+    input:out-of-range{  
+        color: red;  
+    }
+        
+    input:read-only{  
+        border: 3px solid #F00;  
+    } 
+
+    input:read-write{  
+        border: 1px solid #000;  
+    }
+    
+    input:focus:required:invalid{ 
+        background-color: #f00; 
+    } 
+
+    </style>
+    
+</head> 
+<body> 
+    
+    <form action="respuesta.php" method="post"> 
+        <p>
+            <label for="palabra">Texto a buscar</label> 
+            <input type="search" results="5" id="palabra" autofocus> 
+         </p> 
+        <p>
+            <label>Teléfono:</label> 
+            <input type="tel"> 
+        </p>
+        <p>
+            <label>Web personal:</label> 
+            <input type="url"> 
+        </p>
+         <p>
+            <label>Email:</label> 
+            <input type="email" multiple> 
+        </p>
+         <p>
+            <label>Nivel de satisfacción (de 0 a 100):</label> 
+            <input type="number" min="0" max="100" step="10" value="50">
+        </p>
+        <p>
+            <label>Rango:</label> 
+            <input type="range" min="0" max="100" step="10" value="50"> 
+        </p>
+        <p>
+            <label>Fecha:</label> 
+            <input type="date"> 
+        </p>
+        <p>
+            <label>Mes:</label> 
+            <input type="month"> 
+        </p>
+        <p>
+            <label>Semana del año:</label> 
+            <input type="week"> 
+        </p>
+        <p>
+            <label>Hora:</label> 
+            <input type="time" min="11:30" max="23:30" step="600"> 
+        </p>
+        <p>
+            <label>Color:</label> 
+            <input type="color"> 
+        </p>
+        
+        <p>
+            <label>Sitio web de su diario preferido:</label> 
+            <input type="url" name="diario" list="sugerencias"> 
+            
+            <datalist id="sugerencias"> 
+                <option label="La Nación" value="http://www.lanacion.com.ar"> </option> 
+                <option label="Clarín" value="http://www.clarin.com">   </option> 
+                <option label="Página 12" value="http://www.pagina12.com.ar"> </option> 
+                <option label="Infobae" value="http://www.infobae.com"></option> 
+            </datalist> 
+        </p>
+        
+        <p>
+            <label>Su diario preferido:</label> 
+            <input type="url" name="diario" list="diarios"> 
+            <datalist id="diarios"> 
+                <option label="La Nación" value="La Nación"> </option>
+                <option label="Clarín" value="Clarín"></option>
+                <option label="Página 12" value="Página 12"> </option>
+                <option label="Infobae" value="Infobae"></option> 
+            </datalist> 
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+        </p> 
+    </form> 
+
+</body> 
+</html> 

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>Transformaciones</title>
+    <meta charset="utf-8">
+    <style>
+   
+    .contenedor { 
+        width: 400px;
+        height: 500px;
+        position: relative;
+        -webkit-perspective: 800px;
+        perspective:800px;
+    }
+        #objeto {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 1s;
+  transition: transform 1s;
+}
+#objeto div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+}
+   #objeto .frente {
+  background-color: blue;
+}
+
+#objeto .dorso {
+  background-color: green;
+  -webkit-transform: rotateY(180deg);
+}
+#objeto.girado {
+  -webkit-transform: rotateY(180deg);
+}
+
+
+
+    
+    </style>
+</head>
+<body>
+    
+<section class="contenedor">
+    <div id="objeto">
+        <div class="frente">1</div>
+        <div class="dorso">2</div>
+    </div>
+</section>
+
+</body>
+</html>

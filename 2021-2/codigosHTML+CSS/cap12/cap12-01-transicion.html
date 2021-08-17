@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Transición</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]-->
+    <style>
+    
+    #contenedor{ 
+        width:300px; 
+        background: gray; 
+        padding:10px; 
+        text-align: center; 
+    }
+        
+    #contenedor h1, #contenedor p{ 
+        opacity:0; 
+    }
+        
+    #contenedor:hover h1{ 
+        opacity:1;
+        transition:2s; 
+    } 
+
+    #contenedor:hover p{ 
+        opacity:1; 
+        transition:1s 2s; 
+    } 
+    
+    #contenedor:hover{
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+
+    <div id="contenedor"> 
+        <h1>OFERTA</h1> 
+        <p>Descripción de la oferta</p> 
+    </div> 
+     
+</body>
+</html>

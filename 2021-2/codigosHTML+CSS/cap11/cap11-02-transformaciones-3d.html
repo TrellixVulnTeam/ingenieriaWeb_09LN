@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Transformaciones 3D</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+    body{
+        padding-left: 50px;
+        padding-top: 50px;
+    }
+        
+    div{
+        padding:10px;
+        width: 600px;
+        height: 470px;
+        margin-bottom: 200px;
+    }
+    .tr{ 
+        background-color: green;
+        transform: perspective(1000px) rotateY(35deg); 
+        
+        perspective-origin:30% 100%;
+    }
+</style>
+</head>
+<body>
+    <div class="tr">
+        <img src="fotos/foto-01.jpg" alt="Rosas">
+        <p>Rosas del jardín</p>
+    </div>
+    <div class="tr">
+        <img src="fotos/foto-01.jpg" alt="Rosas">
+        <p>Rosas del jardín</p>
+    </div>
+</body>
+</html>

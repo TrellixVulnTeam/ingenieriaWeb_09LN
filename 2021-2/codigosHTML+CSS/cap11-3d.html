@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Transformaciones</title>
+    <meta charset="utf-8">
+    <style>
+    body{
+       /* perspective:500px;*/
+        padding-top:300px;
+        padding-left: 600px;
+        padding-bottom: 300px;
+    }
+        
+    div{
+        padding:10px;
+        width: 600px;
+        height: 470px;
+        margin-bottom: 300px;
+    }
+    .tr{ 
+        background-color: green;
+        transform: perspective(1000px) rotateY(35deg); 
+        
+        perspective-origin:30% 100%;
+    }
+</style>
+</head>
+<body>
+    <div class="tr">
+        <img src="fotos/foto-01.jpg" alt="Rosas">
+        <p>Rosas del jardín</p>
+    </div>
+    <div class="tr">
+        <img src="fotos/foto-01.jpg" alt="Rosas">
+        <p>Rosas del jardín</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Imagen en borde</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+        
+        .marco{ 
+            width:300px;
+	        height:200px;
+            border: double orange 1em;
+	       -webkit-border-image: url(borde.png) 27 round stretch;
+           -o-border-image: url(borde.png) 27 round stretch;	
+	       -moz-border-image: url(borde.png) 27 round stretch;
+	       border-image: url(borde.png) 27 round stretch;
+        }
+
+    </style>
+</head> 
+<body> 
+
+    <div class="marco"></div>
+    
+</body> 
+</html> 

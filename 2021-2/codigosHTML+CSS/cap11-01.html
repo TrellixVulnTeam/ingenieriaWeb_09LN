@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+    <title>Transformaciones</title>
+    <meta charset="utf-8">
+    <style>
+    
+    img + p {
+        text-decoration: none;
+        text-align: center;
+        font-family: Georgia, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 1em;
+    }
+
+        img{
+            display: block;
+            margin: 0 auto;
+        }
+        
+    .polaroid{
+        float: left;
+        border-radius: 4px;
+        margin-top: 15px;
+        margin-left: 20px;
+        padding-top: 25px;
+        width: 650px;
+        transform: rotate(-2deg);
+        box-shadow: 0 2px 5px rgba(0,0,0,.7);
+    }
+        .polaroid0{
+        float: left;
+        border-radius: 4px;
+        margin-top: 15px;
+        margin-left: 20px;
+        padding-top: 25px;
+        width: 650px;
+       
+        box-shadow: 0 2px 5px rgba(0,0,0,.7);
+    }
+        .polaroidescala{
+       
+            transform: scale(1.5);
+            margin-left: 220px;
+            margin-top: 100px;
+        }
+        .polaroid2{
+            clear: both;
+        border-radius: 4px;
+        margin-top: 275px;
+        margin-left: 70px;
+        margin-bottom: 40px;
+        padding-top: 25px;
+        width: 650px;
+        transform: rotate(-15deg);
+        box-shadow: 0 2px 5px rgba(0,0,0,.7);
+    }
+    
+        .rota45{
+            margin-left: 122px;
+         transform: rotate(25deg);
+        }
+        
+    .polaroid3{
+        border-radius: 4px;
+        margin-top: 75px;
+        margin-left: 70px;
+        margin-bottom: 140px;
+        padding-top: 25px;
+        width: 450px;
+        transform: rotate(15deg);
+        box-shadow: 0 2px 5px rgba(0,0,0,.7);
+    }
+        
+        .estira{
+       
+        transform:scale(1.5,0.5);
+            margin-left: 220px;
+            margin-top: 100px;
+        }
+        
+    .skew1{
+        transform: skew(15deg);
+        background-color: gray;
+        border-radius: 10px;
+        padding:10px;
+        margin-left: 30px;
+        text-align: center;
+        width:250px;
+    }
+    </style>
+</head>
+<body>
+    <div class="polaroid">
+        <img src="fotos/foto-01.jpg" alt="Rosas">
+        <p>Rosas del jardín</p>
+    </div>
+    <div style="clear:both"></div>
+      <br><br>  <br><br>  <br><br>  <br><br>
+    
+    <div class="polaroid2">
+        <img src="fotos/foto-02.jpg" alt="Fuente de Venus">
+        <p>Fuente de Venus</p>
+    </div>
+    <br><br>
+    <div class="polaroid3">
+        <img src="fotos/foto-01.jpg" alt="Flores">
+        <p>Flores</p>
+    </div>
+    <br><br><br>
+    <div class="polaroid0">
+        <img src="fotos/foto-01.jpg" alt="Flores">
+        <p>Flores</p>
+    </div>
+    <div class="polaroid0 polaroidescala">
+        <img src="fotos/foto-01.jpg" alt="Flores">
+        <p>Flores</p>
+    </div>
+    <br style="clear:both"><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+     <br><br><br>
+    <div class="polaroid0">
+        <img src="fotos/foto-01.jpg" alt="Flores">
+        <p>Flores</p>
+    </div>
+    <div class="polaroid0 estira">
+        <img src="fotos/foto-01.jpg" alt="Flores">
+        <p>Flores</p>
+    </div>
+    <br style="clear:both"><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+    <div class="polaroid2 rota45">
+        <img src="fotos/foto-02.jpg" alt="Fuente de Venus">
+        <p>Fuente de Venus</p>
+    </div>
+    <br style="clear:both"><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p>
+    
+    <div class="skew1"><h3>Caja con sesgado (skew)</h3><p>Contenido de la caja que será inclinado junto con ella</p></div>
+<p>.</p><p>.</p>
+ 
+    </body>
+</html>

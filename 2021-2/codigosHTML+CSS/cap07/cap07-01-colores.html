@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Colores</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+
+        .translucido{  
+background-color:rgba(100,20,40,0.5);
+}
+
+.tono{
+	background-color: hsl(359,40%,70%);
+	/* Valor de Tono (Hue): 0 a 359 (0 rojo, 120 verde, 240 azul, 359 rojo) */
+}
+
+.tonotranslucido{
+	background-color: hsla(30,50%,80%,0.5);
+}
+
+#color1 {
+	position:absolute;
+	left:184px;
+	top:145px;
+	width:250px;
+	height:151px;
+	z-index:2;
+}
+
+#color2 {
+	position:absolute;
+	left:284px;
+	top:215px;
+	width:250px;
+	height:151px;
+	z-index:1;
+}
+
+#color3{
+	position:absolute;
+	left:384px;
+	top:165px;
+	width:250px;
+	height:151px;
+	z-index:3;
+}
+        
+div {
+    border: 10px solid rgb(255, 0, 0); /* fallback */
+    border: 10px solid rgba(255, 0, 0, .3);
+}
+
+    </style>
+</head> 
+<body> 
+     
+    <div id="color1" class="translucido"></div>
+    <div id="color2" class="tono"></div>
+    <div id="color3" class="tonotranslucido"></div>
+       
+</body> 
+</html> 

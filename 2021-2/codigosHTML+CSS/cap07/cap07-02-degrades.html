@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Degradés</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+
+/* Lineal, de arriba a abajo */
+   	.degrade1{ 
+		background: -webkit-linear-gradient(blue, white);
+		background: -moz-linear-gradient(blue, white);
+		background: -o-linear-gradient(blue, white);
+		background: linear-gradient(blue, white);
+	}
+	
+	/* Diagonal, de arriba a la izquierda, hacia punta opuesta */
+	.degrade2{
+		background: -webkit-linear-gradient(top left, #FFC, #339);
+		background: -moz-linear-gradient(top left, #FFC, #339);
+		background: -o-linear-gradient(top left, #FFC, #339);
+		background: linear-gradient(top left, #FFC, #339);
+	}
+	
+    /* "Stop" o porcentaje desde el cual empieza el cambio de color */
+	.degrade3{
+		background: -webkit-linear-gradient(#669 80%, #333);
+		background: -moz-linear-gradient(#669 80%, #333);
+		background: -o-linear-gradient(#669 80%, #333);
+		background: linear-gradient(#669 80%, #333);
+	}
+	
+	/* Más de dos colores (4 en este ejemplo) */
+	.degrade4{
+		background: -webkit-linear-gradient(215deg, #F3C, #F60, #C33, #06F);
+		background: -moz-linear-gradient(215deg, #F3C, #F60, #C33, #06F);
+		background: -o-linear-gradient(215deg, #F3C, #F60, #C33, #06F);
+		background: linear-gradient(215deg, #F3C, #F60, #C33, #06F);
+	}
+	
+	
+	/* Más de dos colores con "stops" en pixeles */
+	.degrade5{
+		background: -webkit-linear-gradient(120deg, #0f0 120px, #c39 280px, #ff0);
+		background: -moz-linear-gradient(120deg, #0f0 120px, #c39 280px, #ff0);
+		background: -o-linear-gradient(120deg, #0f0 120px, #c39 280px, #ff0);
+		background: linear-gradient(120deg, #0f0 120px, #c39 280px, #ff0);
+}
+
+div {
+	width:300px;
+	height:200px;
+	border:1px solid black;
+	float:left;
+	margin:20px;
+}
+
+article{
+	overflow:auto;
+}
+
+  .repetido1{ 
+      background: repeating-linear-gradient(#FFF, #3CF 20%);  
+  }
+
+  .repetido2{ 
+      background: repeating-linear-gradient(#FFF, #000, #FFF 25%);  
+  } 
+
+   .repetido3{ 
+       background: repeating-linear-gradient(45deg, black, black 20px, gray 20px, gray 40px); 
+   } 
+ 
+.radial1{ 
+background: -moz-radial-gradient(180px 20px, 300px 200px, white 20%, red);  
+background: -webkit-radial-gradient(180px 20px, 300px 200px, white 20%, red);  
+background: radial-gradient(300px 200px at 180px 20px, white 20%, red);  
+} 
+
+.radialrepetido1{ 
+background: -webkit-repeating-radial-gradient(black, white 15px, white 20px, black 25px); 
+background:-moz-repeating-radial-gradient(black, white 15px, white 20px, black 25px); 
+background: -o-repeating-radial-gradient(black, white 15px, white 20px, black 25px); 
+background: repeating-radial-gradient(black, white 15px, white 20px, black 25px); 
+width:300px; 
+height:200px; 
+} 
+
+.radialrepetido2{
+background: -webkit-repeating-radial-gradient(left bottom,circle farthest-side, #F7FF08 0%, #21AD11 10%, #00A3EF 20%, #F7FF08 25%); 
+background: -moz-repeating-radial-gradient(left bottom,circle farthest-side, #F7FF08 0%, #21AD11 10%, #00A3EF 20%, #F7FF08 25%); 
+background: -o-repeating-radial-gradient(left bottom,circle farthest-side, #F7FF08 0%, #21AD11 10%, #00A3EF 20%, #F7FF08 25%); 
+background: repeating-radial-gradient(left bottom,circle farthest-side, #F7FF08 0%, #21AD11 10%, #00A3EF 20%, #F7FF08 25%); 
+width:640px; 
+height:200px; 
+} 
+
+</style>
+</head> 
+<body> 
+
+    <article>
+        
+    <div class="degrade1"></div>
+	<div class="degrade2"></div>
+	<div class="degrade3"></div>
+	<div class="degrade4"></div>
+	<div class="degrade5"></div>
+    <div class="repetido1"></div>
+    <div class="repetido2"></div>
+    <div class="repetido3"></div>
+    <div class="radial1"></div>
+    <div class="radialrepetido1"></div>
+    <div class="radialrepetido2"></div>
+    </article>
+    
+</body> 
+</html> 

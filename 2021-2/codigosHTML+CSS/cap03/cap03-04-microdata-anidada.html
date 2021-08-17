@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Microdata anidada</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+</head> 
+<body> 
+    
+    <div itemscope itemtype="http://schema.org/Person"> 
+        <span itemprop="name">Hernan Beati</span> 
+        <img src="hernanbeati.jpg" itemprop="image"> 
+        <span itemprop="jobTitle">Docente de Programación y Diseño</span> 
+   
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> 
+            <span itemprop="streetAddress">Avenida 1234</span> 
+            <span itemprop="addressLocality">Alejandro Korn</span>, 
+            <span itemprop="addressRegion">Buenos Aires</span> 
+            <span itemprop="postalCode">1864</span> 
+        </div> <!-- Fin de PostalAddress anidado --> 
+       
+        <span itemprop="telephone">(02225) 444-444</span> 
+        <a href="mailto:hernan@saberweb.com.ar" itemprop="email">        hernan@saberweb.com.ar</a> 
+     
+    </div> 
+
+</body> 
+</html> 

@@ -1,0 +1,102 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Transformaciones</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+        
+    img + p {
+        text-decoration: none;
+        text-align: center;
+        font-family: Georgia, sans-serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-bottom: 1em;
+    }
+
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .polaroid{
+        border-radius: 4px;
+        margin-top: 25px;
+        margin-bottom: 60px;
+        margin-left: 20px;
+        padding-top: 25px;
+        width: 650px;
+        box-shadow: 0 2px 5px rgba(0,0,0,.7);
+    }
+        
+    .polaroidescala{
+       
+         transform: scale(1.5);
+         margin-left: 220px;
+         margin-top: 150px;
+    }
+        
+    .polaroidescalaachatada{
+       
+         transform: scale(1.5,0.5);
+         margin-left: 220px;
+         margin-top: 150px;
+    }
+    
+    .polaroidrotacion{
+        border-radius: 4px;
+        margin-top: 75px;
+        margin-left: 70px;
+        margin-bottom: 140px;
+        padding-top: 25px;
+        width: 596px;
+        transform: rotate(15deg);
+        box-shadow: 0 2px 5px rgba(0,0,0,.7);
+    }
+    
+    .skew{
+        transform: skew(15deg);
+        background-color: gray;
+        border-radius: 10px;
+        padding:10px;
+        margin-left: 30px;
+        text-align: center;
+        width:250px;
+    }
+
+    </style>
+</head> 
+<body> 
+    
+    <div class="polaroid">
+        <img src="fotos/foto-01.jpg" alt="Rosas">
+        <p>Original sin transformar</p>
+    </div>
+
+    <div class="polaroid polaroidescala">
+        <img src="fotos/foto-01.jpg" alt="Flores">
+        <p>Escala 150%</p>
+    </div>
+    
+    <div class="polaroid polaroidescalaachatada">
+        <img src="fotos/foto-01.jpg" alt="Flores">
+        <p>Escala 150% horizontal y 50% vertical</p>
+    </div>
+    
+    <div class="polaroid polaroidrotacion">
+        <img src="fotos/foto-02.jpg" alt="Fuente de Venus">
+        <p>Rotación</p>
+    </div>
+    
+     <div class="skew">
+         <h3>Caja con sesgado (skew)</h3>
+         <p>Contenido de la caja que será inclinado junto con ella</p>
+    </div>
+
+</body> 
+</html> 

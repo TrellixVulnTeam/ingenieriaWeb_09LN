@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Selectores</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+    #pie p{ 
+        color:red;
+    } 
+        
+    p::selection{ 
+        color:red; 
+        background-color:grey;    
+    } 
+
+    #bloque p:nth-of-type(3){
+        color:green;
+        font-weight: bold;
+    } 
+        
+    .interno{
+        color:blue;
+    }
+        
+    #cabecera > .interno { 
+        color:red; 
+    } 
+
+    h2 + h3 { 
+       color:green; 
+    } 
+    
+    h3 ~ h4 { 
+        color:violet; 
+    } 
+    </style>
+</head> 
+<body> 
+
+
+<div id="pie">
+   <p>Primero que sí</p> 
+   <p>Segundo que sí</p> 
+</div> 
+
+    <p>Tercero que no</p> 
+    
+<div id="bloque">
+    <h2>Título</h2> 
+    <p>Primer párrafo</p> 
+    <h3>Subtítulo</h3> 
+    <p>Segundo párrafo</p> 
+    <h3>Otro subtítulo</h3> 
+    <p>Tercer párrafo</p> 
+</div> 
+
+
+<div id="cabecera"> 
+   <div class="interno"> 
+      <p>Otro nivel <span class="interno">muy 
+interno</span></p> 
+       </div> 
+</div> 
+
+<h2>Este es el que sirve de referencia</h2> 
+<h3>Este sí será seleccionado</h3> 
+    
+<div id="padre"> 
+   <h3>Título</h3>   
+   <p> párrafo de separación</p>   
+   <h4>Subtítulo con selector general de hermanos</h4> 
+</div> 
+
+</body> 
+</html> 

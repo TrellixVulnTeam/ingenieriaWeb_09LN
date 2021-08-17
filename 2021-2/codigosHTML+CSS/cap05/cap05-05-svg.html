@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>SVG</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+</head> 
+<body> 
+
+    <h1>Ejemplo de SVG en línea</h1> 
+    
+ <svg> 
+  <defs> 
+      <radialGradient id="degrade" cx="50%" cy="50%" 
+r="100%" y2="0%" spreadMethod="pad" 
+gradientUnits="objectBoundingBox" fx="40%" fy="40%" > 
+        <stop offset="0%" style="stopcolor:rgb(255,255,255);stop-opacity:1."/> 
+        <stop offset="100%" style="stop-opacity:.0"/> 
+      </radialGradient> 
+  </defs> 
+  
+     <circle id="circulo" class="importante" cx="50%" 
+cy="50%" r="50" fill="url(#degrade)"/> 
+</svg> 
+
+
+</body> 
+</html> 

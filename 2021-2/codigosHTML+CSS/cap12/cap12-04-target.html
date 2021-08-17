@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Transiciones con evento target</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]-->
+    <style>
+    
+    body{
+        font-family: sans-serif;
+    }
+
+    #seccion2:target{
+        border:2px solid red;
+        background:gray;
+        transition:1s;
+    }
+
+    #contenedor{
+        width:300px;
+        background: gray;
+        padding:10px;
+        text-align: center;
+    }
+
+    #contenedor h1, #contenedor p{
+        opacity:0;
+    }
+        
+    #contenedor:hover h1{
+        opacity:1;
+        transition:2s;
+    }
+        
+    #contenedor:hover p{
+        opacity:1;
+        transition:1s 1s;
+    }
+
+    #objeto1 {
+        width:200px;
+        -webkit-transform-origin:0 0;
+        -moz-transform-origin:0 0;
+        -o-transform-origin:0 0;
+        transform-origin:0 0;
+        -moz-transform:translate(0px,0px);
+        -webkit-transform:translate(0px,0px);
+        -o-transform:translate(0px,0px);
+        transform:translate(0px,0px);
+        transition:2s;
+    }
+        
+    #objeto1:target {
+        -moz-transform:translate(150px,50px);
+        -webkit-transform:translate(150px,50px);
+        -o-transform:translate(150px,50px);
+        transform:translate(150px,50px);
+        transition:2s;
+    }   
+
+    </style>
+</head>
+<body>
+    <a href="#seccion2">Ir a la sección 2</a>
+    
+    
+<div id="seccion2">
+   <h1>Sección 2</h1>
+</div>
+    
+    <a href="#objeto1">Mover objeto 1</a>
+    <div id="objeto1">
+   <h1>Este es el objeto 1</h1>
+</div>
+    
+    <div id="contenedor">
+	<h1>OFERTA</h1>
+	<p>Descripción de la oferta</p>
+</div>
+    </body>
+</html>

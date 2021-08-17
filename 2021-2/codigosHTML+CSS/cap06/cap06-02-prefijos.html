@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Prefijos CSS</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+ .tres_columnas{   
+        -moz-column-count: 3;   
+        -webkit-column-count: 3; 
+        column-count: 3;   
+ 
+        -moz-column-width: 120px;   
+        -webkit-column-width: 120px;   
+        column-width: 120px;  
+   
+        -moz-column-gap: 24px;               
+        -webkit-column-gap: 24px;  
+        column-gap: 24px; 
+      
+        -moz-column-rule: 1px solid #999;  
+        -webkit-column-rule: 1px solid #999;  
+        column-rule: 1px solid #999;  
+    } 
+
+    </style>
+</head> 
+<body> 
+      <p class="tres_columnas">Este es un texto de ejemplo que en ventanas lo suficientemente angostas como para forzar que entre en varios renglones, debe verse a tres columnas en cualquier navegador que soporte y prioirce column-count, y a dos o menos en los que prioricen ancho de columna. Y estamos utilizanso prefijos para cada navegador que lo necesite.</p> 
+       
+</body> 
+</html> 

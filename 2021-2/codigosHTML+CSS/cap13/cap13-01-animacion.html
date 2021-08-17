@@ -1,0 +1,43 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Animación</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]-->
+    <style>
+    @keyframes vaiven {  
+        
+        0% {  
+            transform: rotate(0deg);  
+        }  
+
+        20% {   
+            transform: rotate(270deg);  
+        }  
+
+        100% {  
+            transform: rotate(0deg);  
+        }  
+    
+    }  /* cierre de la llave de @keyframes */ 
+    
+    #objeto { 
+        animation-name: vaiven;  /* Es el nombre que definimos en @keyframes */ 
+        animation-duration: 10s;  /* La duración desde el 0% hasta el 100% */ 
+        margin-top: 300px;
+    } 
+
+    </style>
+</head>
+<body>
+
+    <div id="objeto">
+        <h1>Va pronto y vuelve lento</h1>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Inicio automático con JQuery</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]-->
+    <style>
+    /* Estilos CSS */ 
+    .objeto {  
+        width: 400px;  
+        height: 200px; 
+        background: #639;  
+        transition: width 3s ease-in; 
+        padding: 1em;
+    } 
+
+    .cargado .objeto {  
+        width: 800px;  
+        transition: width 3s ease-in;  
+    } 
+
+    </style>
+</head>
+<body>
+    
+    <div class="objeto">
+        <p>Este es el objeto que comenzará a animarse al cargarse la página, automáticamente, gracias a JQuery que le agrega el class "cargado" a la etiqueta html al cargarse la página.</p>
+    </div>
+
+    <script src="jquery-1.11.3.min.js"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function() { 
+          setTimeout(function(){ 
+           $('html').addClass("cargado"); 
+          }, 1000); 
+        }); 
+    </script> 
+    <!-- El número "1000" son milisegundos de delay, si ponemos un 0 arrancará de inmediato -->
+ 
+</body>
+</html>

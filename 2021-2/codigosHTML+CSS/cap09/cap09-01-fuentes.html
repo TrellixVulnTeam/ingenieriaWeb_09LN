@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Fuentes</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+       
+    /* FONT-FACE */
+    @font-face {
+    font-family: 'Megalopolis';
+    src: url('megalopolisextra-webfont.eot');
+    src: url('megalopolisextra-webfont.eot?#truco-explorer') format('embedded-opentype'),
+         url('megalopolisextra-webfont.woff') format('woff'),
+         url('megalopolisextra-webfont.ttf') format('truetype'),
+         url('megalopolisextra-webfont.svg#MEgalopolisExtraRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    body {
+        font-family: 'Megalopolis', Verdana, Arial, Helvetica, sans-serif;
+        color: #666;
+        font-size: 1.2em;
+        line-height: 1.6em;
+    }
+        
+    #liquidas{  
+        column-count: 3;   
+        column-gap: 24px; 
+        column-rule: 1px solid #999; 
+        -webkit-column-count: 3;   
+        -webkit-column-gap: 24px; 
+        -webkit-column-rule: 1px solid #999;
+        -moz-column-count: 3;   
+        -moz-column-gap: 24px; 
+        -moz-column-rule: 1px solid #999;
+    } 
+
+    #anchofijo{
+        column-width: 120px;  
+        column-gap: 24px; 
+        column-rule: 1px solid #999;
+        -webkit-column-width: 120px;  
+        -webkit-column-gap: 24px; 
+        -webkit-column-rule: 1px solid #999;
+        -moz-column-width: 120px; 
+        -moz-column-gap: 24px; 
+        -moz-column-rule: 1px solid #999;
+     } 
+        
+    .corte{
+        width: 140px;
+        word-wrap:break-word; 
+    }
+        
+    .titulo{
+        padding: 10px;
+        color:white;
+        background-color: gray;
+        width: 170px;
+        line-height: 40px;
+        overflow:hidden; 
+        white-space:nowrap; 
+        text-overflow:ellipsis; 
+    }
+
+    </style>
+</head> 
+<body> 
+
+    <div id="caja">
+        <p>Este texto se ve en la tipografía Megalópolis que hemos convertido a todos los formatos necesarios.
+        </p>
+    </div>
+
+    
+    <div id="liquidas">
+        <p>Este texto se ve en la tipografía Megalópolis que hemos convertido a todos los formatos necesarios.
+        </p>
+    </div>
+    
+    
+    <div id="anchofijo">
+        <p>Este texto se ve en la tipografía Megalópolis que hemos convertido a todos los formatos necesarios.
+        </p>
+    </div>
+    
+    <div class="corte">
+        <p>Este texto contiene una palabra que desborda el ancho de la columna: jajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajajaja pero lo corregimos con CSS.
+        </p>
+    </div>
+    
+   
+        <p class="titulo">Título de la noticia
+        </p>
+   
+
+</body> 
+</html> 

@@ -1,0 +1,136 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Bordes</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+        .borde1{ 
+            border:2px solid #09F; 
+            -moz-border-radius: 35px; /* Firefox */ 
+            -webkit-border-radius: 35px; /* Safari, Chrome */ 
+            border-radius: 35px; /* estándar */ 
+        } 
+        
+        .borde2{   
+            border-radius:15px 0px 45px 0px; 
+            background-color:#fc0;
+        } 
+        
+        .borde3{   
+            border-top-left-radius:100px 50px; 
+            background-color:#c39;
+        } 
+        
+        .borde4{   
+            border-radius:100px 0 0 0 / 50px 0 0 0; 
+            background-color:#cc0;
+        } 
+        
+        .borde5{   
+            border-radius:30px / 50%;
+            background-color:#ff6;
+        } 
+ 
+        .borde6{   
+            border-radius:100% 20px 40px 20px; 
+            background-color:#369;
+        } 
+        
+        .borde7{    
+            border-radius:50% 50% 10px 10px / 90px 90px 10px 10px; 
+            background-color:#639;
+        } 
+ 
+    
+        div{
+            width: 300px;
+            height: 200px;
+            margin:20px;
+        }
+        
+        .exterior { 
+            display: inline-block; 
+            background-color: #CCC; 
+            border-radius: 4em; 
+            padding: 2em; 
+            width: 14em; 
+            height: 14em;
+        } 
+ 
+        .interior { 
+            width: 12em; 
+            height: 12em; 
+            line-height: 12em; 
+            background-color: red; 
+            border-radius: 2em; 
+        } 
+
+        table{ 
+             background-color:#FCC; 
+             border:1px solid #FCC; 
+             -moz-border-radius:10px; 
+             -webkit-border-radius:10px; 
+             border-radius:10px; 
+        } 
+        
+        table th { 
+             padding:4px 10px;  
+        } 
+
+        td { 
+             background-color:#fff; 
+             padding:2px 10px 4px 10px; 
+        }
+        
+        tr.par td { 
+            background-color:#eee; 
+        } 
+
+        /* Primer TD del último TR */ 
+        tr:last-child td:first-child { 
+             -moz-border-radius-bottomleft:8px; 
+             -webkit-border-bottom-left-radius:8px; 
+             border-bottom-left-radius:8px; 
+        } 
+
+        /* Ultimo TD del último TR */  
+        tr:last-child td:last-child { 
+             -moz-border-radius-bottomright:8px; 
+             -webkit-border-bottom-right-radius:8px; 
+             border-bottom-right-radius:8px; 
+        } 
+
+
+
+    </style>
+</head> 
+<body> 
+
+    <div class="borde1"></div>
+    <div class="borde2"></div>
+    <div class="borde3"></div>
+    <div class="borde4"></div>
+    <div class="borde5"></div>
+    <div class="borde6"></div>
+    <div class="borde7"></div>
+    
+    <div class="exterior"> 
+        <div class="interior"> 
+            Bordes concéntricos. 
+        </div> 
+    </div> 
+    
+    <table>
+        <tr><th>Columna 1</th><th>Columna 2</th><th>Columna 3</th></tr>
+        <tr><td>1-1</td><td>1-2</td><td>1-3</td></tr>
+        <tr class="par"><td>2-1</td><td>2-2</td><td>2-3</td></tr>
+        <tr><td>3-1</td><td>3-2</td><td>3-3</td></tr>
+    </table>
+    
+</body> 
+</html> 

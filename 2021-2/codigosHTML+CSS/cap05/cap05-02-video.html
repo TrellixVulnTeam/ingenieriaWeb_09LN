@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Video</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+</head> 
+<body> 
+
+      <video width="640" height="360" poster="foto.jpg" controls="controls"> 
+        <source src="consulta.ogg" type="video/ogg"> 
+        <source src="consulta.mp4" type="video/mp4"> 
+        <source src="consulta.webm" type="video/webm"> 
+ 
+        <!-- 1. Contenido alternativo usando un object para Explorer y otro para no Explorers -->  
+        
+        <!--[if gt IE 6]> 
+        <object width="640" height="375" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B">
+        <![endif]--> 
+        <!--[if !IE]><!--> 
+        <object width="640" height="375" type="video/quicktime" data="consulta.mp4"> 
+        <!--<![endif]--> 
+        <param name="src" value="consulta.mp4" /> 
+        <param name="showlogo" value="false" /> 
+        
+            <!-- 2. Object que funciona como contenido alternativo del object anterior -->      
+            <object width="640" height="380" type="application/xshockwave-flash" data="player.swf?image=foto.jpg&file=consulta.mp4"> 
+                <param name="movie" value="player.swf?image=foto.jpg&amp;file=consulta.mp4" />
+
+                <!-- 3. Contenido alternativo del object más interno --> 
+                <a href="consulta.mp4" title="Su dispositivo no puede  reproducir el video, por favor descárguelo desde este enlace"><img src="foto.jpg" width="640" height="360" alt="Cómo consultar disponibilidad de un dominio en el NIC" /></a> 
+                <!-- Fin del contenido alternativo del object más interno --> 
+            </object> 
+            <!-- Fin del object interno de nivel "2" --> 
+ 
+        <!-- Fin del object externo de nivel "1" --> 
+        <!--[if gt IE 6]><!--> 
+    </object> 
+    <!--<![endif]--> 
+</video> 
+
+</body> 
+</html> 

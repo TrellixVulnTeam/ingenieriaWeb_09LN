@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Perspectiva</title> 
+    <!--[if lt IE 9]> 
+    <script 
+src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+    </script> 
+    <![endif]--> 
+    <style>
+    body{
+        perspective:500px;
+        perspective-origin: 90% 90%;
+       
+    }
+        
+    div{
+        padding:10px;
+        width: 600px;
+        height: 470px;
+       }
+    .tr{ 
+        background-color: green;
+        transform: perspective(400px) rotateY(35deg); 
+        }
+</style>
+</head>
+<body>
+    <div class="tr">
+        <img src="fotos/foto-01.jpg" alt="Rosas">
+        <p>Rosas del jardín</p>
+    </div>
+    <div class="tr">
+        <img src="fotos/foto-01.jpg" alt="Rosas">
+        <p>Rosas del jardín</p>
+    </div>
+</body>
+</html>
