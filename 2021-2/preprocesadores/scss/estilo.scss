@@ -1,0 +1,26 @@
+@import 'main';
+
+@mixin transformar($tamanyo,$ancho){
+  text-align: center; 
+  @if $ancho>300 {
+    font-size: $tamanyo;
+   }@else{
+     font-size:12px;
+   } 
+}
+
+ul{
+  list-style: none;  
+  display:flex;
+  flex-wrap: wrap;
+}
+ul li img{
+   width:150px;
+   height:150px;
+}
+
+#galeria p{
+   background-color: $fondo;
+   @include transformar(24,300);
+}
+

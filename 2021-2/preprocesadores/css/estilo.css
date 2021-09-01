@@ -1,0 +1,20 @@
+ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+ul li img {
+  width: 150px;
+  height: 150px;
+}
+
+#galeria p {
+  background-color: red;
+  text-align: center;
+  font-size: 12px;
+}
+/*# sourceMappingURL=estilo.css.map */
