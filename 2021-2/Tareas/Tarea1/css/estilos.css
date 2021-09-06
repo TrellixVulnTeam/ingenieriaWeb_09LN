@@ -1,0 +1,66 @@
+
+#contenedor{
+    text-align:-webkit-center;
+    margin:auto;
+    width:90%;
+    display: block;
+
+}
+header{
+    margin-left:40px;
+
+}
+
+h1{
+    text-align:left;
+    font-size: 22px;
+}
+#navegacion{
+   list-style-type: none;
+   display: flex;
+   flex-wrap: wrap;
+   margin-left:10px;
+}
+
+.texto{
+   float:right;
+   margin-top:5px;
+}
+
+#navegacion li{
+    margin:10px;
+    padding:10px;
+    border:1px solid #000;
+    vertical-align: middle;
+}
+
+#galeria{
+     display:flex;
+     flex-wrap: wrap;
+     margin-left:45px;
+}
+#galeria li{
+    margin:20px;
+    padding:10px;
+    border:1px solid #000;
+}
+
+
+
+#galeria li img{
+    width:200px;
+    height:240px;
+}
+
+caption,cite,p{
+    font-size:12px;
+    font-weight: bold;
+}
+
+
+footer{
+    text-align:center;
+    border:1px solid #000;
+    height:20px;
+    width:90%
+}
