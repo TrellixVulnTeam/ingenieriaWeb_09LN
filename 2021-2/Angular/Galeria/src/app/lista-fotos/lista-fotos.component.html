@@ -1,0 +1,21 @@
+<ul ngbNav [(activeId)]="activeId" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink>Inicio</a>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink>Galería</a>
+    </li>
+  </ul>
+
+<div *ngIf="activeId==2">
+ <ul id="fotos">
+    <li *ngFor="let item of fotos">
+        <img src="../../assets/{{item.ruta}}"  alt="{{item.nombre}}">
+        <p>{{item.nombre}}</p>
+    </li>
+ </ul>
+</div>
+
+<div *ngIf="activeId==1">
+      Mensaje de bienvenida
+</div>
