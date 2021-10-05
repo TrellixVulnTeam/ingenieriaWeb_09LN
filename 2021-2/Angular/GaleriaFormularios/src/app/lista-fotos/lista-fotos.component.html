@@ -25,11 +25,20 @@
 
 <div *ngIf="activeId==3">
    <div *ngIf="!estado">
-      <form [formGroup]="formulario" (ngSubmit)="validacion2()">
+      <form [formGroup]="formulario" (ngSubmit)="validacion2()" novalidate>
       <ul>
          <li>
           <label>Nombre Completo</label>
-          <input type="text" formControlName="nombre" placeholder="Nombre Completo">
+          <input type="text" formControlName="nombre" placeholder="Nombre Completo" >
+         
+          <div *ngIf="formulario.controls['nombre'].invalid && (formulario.controls['nombre'].dirty || formulario.controls['nombre'].touched)" class="alert alert-danger">
+              <div *ngIf="formulario.controls['nombre'].hasError('required')">
+                * Nombre obligatorio
+              </div> 
+              <div *ngIf="formulario.controls['nombre'].hasError('maxlength')">
+                * Tamaño máximo de 10
+              </div>  
+         </div>
         </li>
         <li>
           <label>Asunto</label>
@@ -39,7 +48,7 @@
           <label>Comentarios</label>
           <textarea formControlName="comentarios" cols="10" rows="10"></textarea>
         </li>
-        <li><button type="submit">Enviar</button></li>
+        <li><button type="submit" [disabled]="formulario.invalid">Enviar</button></li>
         </ul>
      </form>
     </div>

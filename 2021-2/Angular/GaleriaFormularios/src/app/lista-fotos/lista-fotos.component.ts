@@ -22,8 +22,8 @@ export class ListaFotosComponent implements OnInit {
  
   constructor(public Form:FormBuilder) {
      this.formulario=this.Form.group({
-        nombre:['',Validators.required],
-        asunto:['',Validators.required],
+        nombre:['',[Validators.required, Validators.maxLength(10)]],
+        asunto:['',[Validators.required, Validators.maxLength(10)]],
         comentarios:['',Validators.required]
      });
    }
