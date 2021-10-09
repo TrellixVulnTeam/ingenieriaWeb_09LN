@@ -7,8 +7,8 @@ A su vez recolectar información acerca de los cursos que más le ha tomado mayo
 Por lo tanto se solicita realizar un formulario responsivo con la siguiente información:
 
 - Nombre Completo (Tipo String)
-- - RUT: (Tipo String)
-Correo Electrónico (Tipo: Email)
+- RUT: (Tipo String)
+- Correo Electrónico (Tipo: Email)
 - Teléfono Móvil: (Tipo : Number)
 Seleccionar uno o más lenguajes de programación de un interés (Tipo Checklist)
 - Python
