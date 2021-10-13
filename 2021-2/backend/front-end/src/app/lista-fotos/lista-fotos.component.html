@@ -1,0 +1,65 @@
+<ul ngbNav [(activeId)]="activeId" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
+        <span>Inicio</span></a>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink>Galería</a>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink>Contacto</a>
+    </li>
+  </ul>
+
+<div *ngIf="activeId==2">
+ <ul id="fotos">
+    <li *ngFor="let item of fotos">
+        <img src="../../assets/{{item.ruta}}"  alt="{{item.nombre}}">
+        <p>{{item.nombre}}</p>
+    </li>
+ </ul>
+</div>
+
+<div *ngIf="activeId==1">
+      Mensaje de bienvenida
+</div>
+
+<div *ngIf="activeId==3">
+  <div *ngIf="!activarMsg">
+   <form [formGroup]="formulario" (ngSubmit)="validacion()" novalidate>
+       <ul> 
+         <li>
+            <label>Nombre Completo</label>
+            <input type="text"  formControlName="nombre" placeholder="Nombre Completo">
+            <div *ngIf="formulario.controls['nombre'].invalid && (formulario.controls['nombre'].dirty || formulario.controls['nombre'].touched)" class="alert alert-danger">
+               <div *ngIf="formulario.controls['nombre'].hasError('required')">
+                 Campo obligatorio
+               </div>
+               <div *ngIf="formulario.controls['nombre'].hasError('maxlength')">
+                 el máximo de caracteres es 10
+               </div>
+            </div>
+          </li>
+         <li>  
+           <label>Asunto</label>
+          <input type="text" formControlName="asunto" placeholder="Asunto">
+
+         </li>
+         <li>
+          <label>Comentarios</label>
+          <textarea formControlName="comentarios" cols="10"  rows="10"></textarea>
+         </li>
+
+         <li>
+            <button type="submit" [disabled]="!formulario.valid">Enviar Datos</button>
+         </li>
+       </ul>
+
+    </form>
+  </div>
+
+  <div *ngIf="activarMsg">
+      Gracias tus datos fueron
+  </div>
+
+</div>
