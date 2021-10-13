@@ -1,0 +1,22 @@
+#fotos{
+   display: flex;
+   flex-wrap: wrap;
+   list-style-type: none;
+}
+
+span{
+    display: inline-block;
+    
+}
+mat-icon{
+    
+}
+
+#fotos li{
+    margin:10px;
+}
+
+#fotos li img{
+    width:220px;
+    height:220px;
+}
