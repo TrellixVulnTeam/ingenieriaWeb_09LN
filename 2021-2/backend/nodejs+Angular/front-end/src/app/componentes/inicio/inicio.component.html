@@ -1,0 +1,9 @@
+<ul>
+    <li *ngFor="let noticia of ListaContenidos">
+       <h2>{{noticia.titulo}}</h2>
+       <img src="../../../assets/{{noticia.imagen}}" alt="{{noticia.titulo}}">
+       <p>{{noticia.resumen}}</p>
+       <button [routerLink]="['/contenido']" routerLinkActive="router-link-active"  routerLinkActive="router-link-active"  routerLinkActive="router-link-active" >Ver más</button>
+    </li>
+   
+</ul>
