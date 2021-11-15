@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-8">
+      <label class="btn btn-default p-0">
+        <input type="file" accept="image/*" multiple (change)="selectArchivos($event)" />
+      </label>
+    </div>
+  
+    <div class="col-4">
+      <button
+        class="btn btn-success btn-sm"
+        [disabled]="!selectedFiles"
+        (click)="SubirArchivos()"
+      >
+       Submit 
+      </button>
+    </div>
+
+    <div class="card mt-3">
+  <div class="card-header">Lista de imagenes</div>
+  <ul
+    class="list-group list-group-flush"
+    *ngFor="let image of imageInfos | async"
+  >
+    <li class="list-group-item">
+      <p><a href="{{ image.url }}">{{ image.name }}</a></p>
+      <img src="{{ image.url }}" alt="{{ image.name }}" height="80px" />
+    </li>
+  </ul>
+
+  <ul *ngFor="let item of Imagenes">
+     <li><img src="{{item}}"></li>
+     
+  </ul>
+</div>
+  </div>
+
+
