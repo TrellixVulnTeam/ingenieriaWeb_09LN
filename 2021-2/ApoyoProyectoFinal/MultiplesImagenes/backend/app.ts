@@ -24,24 +24,30 @@ app.post('/upload',(req:any,res:any,next:any)=>{
     let file_ext = files.file.originalFilename.split('.').pop();
     let index = old_path.lastIndexOf('/') + 1;
     let file_name = old_path.substr(index);
-    let new_path = __dirname+"/../../Images/src/assets/uploads/"+file_name + '.' + file_ext;
+    let new_path = __dirname+"/../../Images/src/assets/uploads/"+files.file,originalFilename;
+    //let new_path = "/uploads/"+file_name + '.' + file_ext;
 
+    console.log(old_path);
+    
     fs.readFile(old_path, function(err:any, data:any) {
       fs.writeFile(new_path, data, function(err:any) {
           fs.unlink(old_path, function(err:any) {
+              console.log(new_path);
+              console.log(data);
               if (err) {
-                  //res.status(500);
-                  //res.json({'success': false});
+                  res.status(500);
+                  res.json({'success': false});
               } else {
+                 
                   //res.status(200);
                   //res.json({'success': true,'path':new_path});
               }
           });
       });
   });
+  res.json({fields, files });
 });
-
-    //res.json({ fields, files });
+   
 });
 
 app.get('/files',(req:any,res:any,next:any)=>{

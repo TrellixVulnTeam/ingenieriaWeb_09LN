@@ -21,12 +21,16 @@ app.post('/upload', function (req, res, next) {
         var index = old_path.lastIndexOf('/') + 1;
         var file_name = old_path.substr(index);
         var new_path = __dirname + "/../../Images/src/assets/uploads/" + file_name + '.' + file_ext;
+        //let new_path = "/uploads/"+file_name + '.' + file_ext;
+        console.log(old_path);
         fs.readFile(old_path, function (err, data) {
             fs.writeFile(new_path, data, function (err) {
                 fs.unlink(old_path, function (err) {
+                    console.log(new_path);
+                    console.log(data);
                     if (err) {
-                        //res.status(500);
-                        //res.json({'success': false});
+                        res.status(500);
+                        res.json({ 'success': false });
                     }
                     else {
                         //res.status(200);
@@ -35,8 +39,8 @@ app.post('/upload', function (req, res, next) {
                 });
             });
         });
+        res.json({ fields: fields, files: files });
     });
-    //res.json({ fields, files });
 });
 app.get('/files', function (req, res, next) {
     var directoryPath = __dirname + "/../../Images/src/assets/uploads/";
