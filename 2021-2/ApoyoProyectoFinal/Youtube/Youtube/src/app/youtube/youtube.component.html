@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let item of Videos">
+        <p>{{item.titulo}}</p>
+        <iframe width="360" height="215" [src]='LimpiarURL(item.IDVideo)' frameborder="0" allowfullscreen></iframe>
+    </li>
+</ul>
