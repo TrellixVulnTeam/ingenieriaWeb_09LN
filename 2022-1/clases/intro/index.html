@@ -13,14 +13,75 @@
 
        <!--javascript-->
     </head>
-   <body>
-        <div id="menu">
-            <ul> 
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galería</a></li>
-                <li><a href="contacto.html">Contactenos</a></li>
-            </ul>
-        </div>
-   </body>
+   <body> 
+       <header><h1>Titulo de la pagina</h1></header>
+        <nav>
+                <ul id="menu"> 
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Contactenos</a></li>
+                </ul>
+         </nav>
 
+  <section id="principal">
+        <img src="images/imagenes/img1.jpg" width="100%">
+  </section>
+
+  <!--galeria-->
+  <section id="galeria">
+   <h2>Mi galeria</h2>
+   <ul>
+        <li>
+            <img src="images/imagenes/1.png" title="imagen1"/>
+            <p>Texto descripción de la imagen</p>
+        </li>
+        <li>
+            <img src="images/imagenes/2.png" title="imagen1"/>
+            <p>Texto descripción de la imagen</p>
+        </li>
+        <li>
+            <img src="images/imagenes/3.png" title="imagen1"/>
+            <p>Texto descripción de la imagen</p>
+        </li>
+        <li>
+            <img src="images/imagenes/4.png" title="imagen1"/>
+            <p>Texto descripción de la imagen</p>
+        </li>
+        <li>
+            <img src="images/imagenes/5.png" title="imagen1"/>
+        </li>
+   </ul>
+
+  </section>
+  <!--contactenos-->
+  <section id="contactenos">
+      <form>
+         <ul>
+            <li>
+             <label>Nombre completo</label>
+             <input type="text" id="nombre" />
+           </li>
+           <li>
+            <label>Número de teléfono</label>
+            <input type="number" id="numero" />
+           </li>
+           <li>
+            <label>Correo Electrónico</label>
+            <input type="email" id="email" />
+           </li>
+           <li><button>Enviar</button></li>
+        </ul>
+
+      </form>
+
+  </section>
+
+
+
+  <footer>Realizado por : XXXXX</footer>
+
+
+        
+   </body>
 </html>
