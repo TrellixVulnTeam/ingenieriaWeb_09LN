@@ -5,83 +5,48 @@
 <html lang="es">
    <head>
        <meta charset="utf-8" />
-       <title>Mi primera página</title>
+       <title>WoW::Entretenimiento</title>
        <!--estilos-->
        <link rel="stylesheet"  href="css/reset.css" type="text/css"/>
+       <link rel="stylesheet" href="css/menu.css" type="text/css"/>
        <link rel="stylesheet"  href="css/estilos.css" type="text/css"/>
-   
-
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+       <link rel="stylesheet" href="css/icons.css" type="text/css"/>
        <!--javascript-->
     </head>
    <body> 
-       <header><h1>Titulo de la pagina</h1></header>
+<!--cabeza + menu-->
+       <header><h1>WoW</h1></header>
         <nav>
                 <ul id="menu"> 
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#galeria">Galería</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Contactenos</a></li>
+                    <li class="visited"><a href="#" title="inicio"><span class="material-icons">
+                        home</span>Inicio</a></li>
+                    <li><a href="galeria.html" title="galeria"><span class="material-icons">
+                        grain
+                        </span>Galería</a></li>
+                    <li><a href="videos.html" title="videos"><span class="material-icons">play_circle</span>Videos</a></li>
+                    <li><a href="contactenos.html" title="contáctenos"><span class="material-icons">contacts</span>Contáctenos</a></li>
                 </ul>
+                <div id="buscador">
+                      <form method="POST">
+                           <input type="search" autocomplete="address-level1" placeholder="Buscador" />
+                      </form>
+                </div>
          </nav>
 
+<!--fin cabeza+menu-->
   <section id="principal">
-        <img src="images/imagenes/img1.jpg" width="100%">
-  </section>
-
-  <!--galeria-->
-  <section id="galeria">
-   <h2>Mi galeria</h2>
-   <ul>
-        <li>
-            <img src="images/imagenes/1.png" title="imagen1"/>
-            <p>Texto descripción de la imagen</p>
-        </li>
-        <li>
-            <img src="images/imagenes/2.png" title="imagen1"/>
-            <p>Texto descripción de la imagen</p>
-        </li>
-        <li>
-            <img src="images/imagenes/3.png" title="imagen1"/>
-            <p>Texto descripción de la imagen</p>
-        </li>
-        <li>
-            <img src="images/imagenes/4.png" title="imagen1"/>
-            <p>Texto descripción de la imagen</p>
-        </li>
-        <li>
-            <img src="images/imagenes/5.png" title="imagen1"/>
-        </li>
-   </ul>
-
-  </section>
-  <!--contactenos-->
-  <section id="contactenos">
-      <form>
-         <ul>
-            <li>
-             <label>Nombre completo</label>
-             <input type="text" id="nombre" />
-           </li>
-           <li>
-            <label>Número de teléfono</label>
-            <input type="number" id="numero" />
-           </li>
-           <li>
-            <label>Correo Electrónico</label>
-            <input type="email" id="email" />
-           </li>
-           <li><button>Enviar</button></li>
-        </ul>
-
-      </form>
-
+        <img src="multimedia/imagenes/img1.jpg" width="100%" alt="bienvenido">
+          <div class="saludo">
+            <div class="texto">Bienvenido Usuario</div>
+          </div>
   </section>
 
 
+  <footer><span>Realizado por : XXXXX</span></footer>
 
-  <footer>Realizado por : XXXXX</footer>
-
-
-        
+    
    </body>
 </html>
