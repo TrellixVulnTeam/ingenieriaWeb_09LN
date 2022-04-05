@@ -1,0 +1,2 @@
+/*comentarios*/
+Texto="Hola mundo";
