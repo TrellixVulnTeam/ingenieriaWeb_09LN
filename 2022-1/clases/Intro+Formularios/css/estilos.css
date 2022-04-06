@@ -1,0 +1,20 @@
+body {
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  margin: 10px;
+}
+
+ul li img {
+  width: 180px;
+  height: 180px;
+}
+/*# sourceMappingURL=estilos.css.map */

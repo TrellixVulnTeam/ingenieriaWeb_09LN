@@ -1,0 +1,17 @@
+$color:white;
+body{
+    background-color: $color;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+}
+ul li{
+    margin:10px;
+}
+
+ul li img{
+  width:180px;
+  height: 180px;
+}
