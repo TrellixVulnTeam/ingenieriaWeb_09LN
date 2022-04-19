@@ -1,0 +1,17 @@
+@import "normalize";
+@import "src/corners";
+
+$tamano:200px;
+ul{
+
+    list-style-type: none;
+    li{
+        margin:10px;
+        @include dark;
+    }
+}
+
+img{
+    width:$tamano;
+    
+}

@@ -1,0 +1,6 @@
+$accent-color: #535353;
+
+@mixin dark{
+  background-color:$accent-color;
+  color:#fff;
+}
