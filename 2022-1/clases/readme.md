@@ -3,3 +3,4 @@
      - Maquetación Web: HTML + CSS
      - Javascript: interactuando con el DOM
      - Introducción a TypeScript
+     - Introducción con la librería jQuery
