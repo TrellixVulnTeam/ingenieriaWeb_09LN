@@ -16,7 +16,7 @@ Se recomienda abrir todo el proyecto desde Visual Studio Code.
 
 ## Front-End
 - Ir al directorio Login
-- Abrir otro terminal y ejecutar el siguiente comando: 
+- Abrir otro terminal y ejecutar los siguientes comandos: 
    - - npm install
    - - ionic serve
 
