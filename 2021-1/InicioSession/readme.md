@@ -10,12 +10,14 @@ Se recomienda abrir todo el proyecto desde Visual Studio Code.
 ## Back-end
 - Abrir un nuevo Terminal
 - Ir al directorio backend usando el comando cd backend
-- Ejecutar el siguiente comando:  
+- Ejecutar los siguientes comandos:  
+   - - npm install
    - - node inicio.js
 
 ## Front-End
 - Ir al directorio Login
 - Abrir otro terminal y ejecutar el siguiente comando: 
+   - - npm install
    - - ionic serve
 
 
