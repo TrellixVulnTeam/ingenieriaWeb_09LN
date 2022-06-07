@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="js/lib/jquery-3.6.0.min.js"></script>
+        <script>
+         $(document).ready(function () {
+            $(".boton").on("click",function(){
+                 console.log("Funcionando");
+                 $("#carusel").append($("img",{"src":"images/imagen.png","alt":"descripción de la imagen"}));
+             });
+         });
+        </script>
+    </head>
+    <body>
+        <div id="carusel"></div>
+        <input type="button" class="boton" value="Hola"/>
+    </body>
+</html>

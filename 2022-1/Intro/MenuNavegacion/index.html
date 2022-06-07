@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!--https://materializecss.com/navbar.html
+    https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Typical_Use_Cases_of_Flexbox
+    -->
+    <!--freepik-->
+    <head>
+        <meta charset="utf-8">
+        <title>Menú de Navegación</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css"  href="css/estilos.css"/>
+        <script src="js/inicio.js"></script>
+      <style>
+            @media screen and (max-width: 900px) {
+                ul {
+                    flex-direction:column;
+                }
+            }
+            /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+            ul {
+                width: 100%;
+            }
+          }       
+      </style>
+    </head>
+    <body>
+
+        <nav id="navbar">
+            <div id="logo"><h1>Logo</h1></div>
+            <div id="menu">
+                <ul id="menu1">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#" class="categorias">Productos</a>
+                        <ul>
+                            <li><a href="#">Categoria 1</a></li>
+                            <li><a href="#">Categoria 2</a></li>
+                            <li><a href="#">Categoria 3</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#contactenos">Contactenos</a></li>
+                </ul>     
+            </div>
+        </nav>
+       
+        <section id="principal">
+          <img src="images/img1.jpg" width="100%"/>
+        </section>
+
+       <section id="galeria">
+            <h2> Mis Fotos</h2>
+             <ul>
+                <li>
+                   <a href="#" title="foto1"> <img src="images/1.png" /></a>
+                   <p>Foto 1</p>
+                </li>
+                <li>
+                    <a href="#" title="foto1"><img src="images/2.png" /></a>
+                    <p>Foto 1</p>
+                </li>
+                <li>
+                    <a href="#" title="foto1"><img src="images/3.png" /></a>
+                    <p>Foto 1</p>
+                </li>
+                <li>
+                    <a href="#" title="foto1"><img src="images/4.png" /></a>
+                    <p>Foto 1</p>
+                </li>
+                <li>
+                    <a href="#" title="foto1"><img src="images/5.png" /></a>
+                    <p>Foto 1</p>
+                </li>
+                <li>
+                    <a href="#" title="foto1"><img src="images/6.png" /></a>
+                    <p>Foto 1</p>
+                </li>
+                <li>
+                    <a href="#" title="foto1"><img src="images/7.png" /></a>
+                    <p>Foto 1</p>
+                </li>
+             </ul>
+       </section>
+
+       <section id="contactenos" >
+           <h3>Contactenos</h3>
+             <form>
+               <ul>
+                <li>
+                    <label>Nombre Completo</label>
+                    <input type="text" id="nombre">
+                </li>
+                <li>
+                    <label>RUT</label>
+                    <input type="number" id="rut">
+                </li>
+                <li>
+                    <label>Email</label>
+                    <input type="email" id="email">  
+                </li>
+                <li>
+                    <button>Enviar</button>
+                </li>
+               </ul>
+             </form>
+       </section>
+    </body>
+</html>

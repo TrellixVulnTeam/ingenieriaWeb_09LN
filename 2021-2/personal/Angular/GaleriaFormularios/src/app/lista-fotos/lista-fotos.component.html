@@ -1,0 +1,49 @@
+<ul ngbNav [(activeId)]="activeId" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon><span>Inicio</span></a>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink>Galería</a>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink>Formularios</a>
+    </li>
+</ul>
+
+<div *ngIf="activeId==2">
+ <ul id="fotos">
+    <li *ngFor="let item of fotos">
+        <img src="../../assets/{{item.ruta}}"  alt="{{item.nombre}}">
+        <p>{{item.nombre}}</p>
+    </li>
+ </ul>
+</div>
+
+<div *ngIf="activeId==1">
+      Mensaje de bienvenida
+</div>
+
+<div *ngIf="activeId==3">
+   <div *ngIf="!estado">
+      <form [formGroup]="formulario" (ngSubmit)="validacion2()">
+      <ul>
+         <li>
+          <label>Nombre Completo</label>
+          <input type="text" formControlName="nombre" placeholder="Nombre Completo">
+        </li>
+        <li>
+          <label>Asunto</label>
+          <input type="text" formControlName="asunto" placeholder="Asunto">
+        </li>
+        <li>
+          <label>Comentarios</label>
+          <textarea formControlName="comentarios" cols="10" rows="10"></textarea>
+        </li>
+        <li><button type="submit">Enviar</button></li>
+        </ul>
+     </form>
+    </div>
+    <div *ngIf="estado">
+         Mensaje enviado
+    </div>
+</div>

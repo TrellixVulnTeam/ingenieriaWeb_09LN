@@ -1,0 +1,48 @@
+[{
+   "idUsuario": 1,
+   "titulo":"Paisaje",
+   "descripción": "descripción de la galería",
+   "Fotos":[{
+       "id":1,
+       "imagen":"imagen1.png",
+       "titulo":"titulo",
+       "visitas":2
+       },{
+        "id":2,
+        "imagen":"imagen2.png",
+        "titulo":"titulo",
+        "visitas":0   
+       }],
+    "Comentarios":[{
+         "idFoto":1,
+         "comentario":"Aqui está un comentario",
+         "idUsuario":3
+    },{
+        "idFoto":3,
+        "comentario":"Aqui está un comentario",
+        "idUsuario":2
+   }]},
+   {
+    "idUsuario": 5,
+    "titulo":"Je t'aime Paris",
+    "descripción": "descripción de la galería",
+    "Fotos":[{
+        "id":1,
+        "imagen":"Paris1.png",
+        "titulo":"titulo",
+        "visitas":2
+        },{
+         "id":2,
+         "imagen":"ParisNoche.png",
+         "titulo":"titulo",
+         "visitas":0   
+        }],
+     "Comentarios":[{
+          "idFoto":1,
+          "comentario":"Super photo",
+          "idUsuario":3
+     },{
+         "idFoto":3,
+         "comentario":"Aqui está un comentario",
+         "idUsuario":2
+    }]}]

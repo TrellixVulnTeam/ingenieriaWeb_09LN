@@ -1,0 +1,15 @@
+1- construir el servicio en nodejs
+
+2- construir Dockerfile y .dockerignore
+
+3- docker build -t NOMBREIMAGEN . (creando la imagen)
+
+4- docker images (buscar la imagen)
+5- docker run -it -p puertoyo:puertoNodejs NOMBREIMAGEN
+6- docker run -d -p puertoyo:puertonodejs NOMBREIMAGEN (como proceso)
+7- docker ps (saber que procesos están corriendo)
+
+Bootstrap
+npm i @ng-bootstrap/ng-bootstrap --save
+
+

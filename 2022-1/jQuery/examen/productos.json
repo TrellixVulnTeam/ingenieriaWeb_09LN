@@ -1,0 +1,46 @@
+[{
+    "Id":1,
+    "titulo": "Camiseta",
+    "imagen":"camiseta.png",
+    "descripción": "camiseta 100% algodón, suave",
+    "caracteristicas":[{
+         "tallas":[
+              {"id":1, "valor":"XS"},
+              {"id":2,"valor":"S"},
+              {"id":3,"valor":"M"},
+              {"id":4,"valor":"L"},
+              {"id":5,"valor":"XL"},
+              {"id":6,"valor":"XXL"}
+             ],
+         "colores":[
+             {"idTalla":1,"valor":"Azul","cantidad":3},
+             {"idTalla":1,"valor":"Negro","cantidad":4},
+             {"idTalla":1,"valor":"Rojo","cantidad":1},
+             {"idTalla":2,"valor":"Azul","cantidad":0},
+             {"idTalla":2,"valor":"Negro","cantidad":10},
+             {"idTalla":3,"valor":"Violeta","cantidad":3}]
+          }]},
+          {
+          "Id":2,
+          "titulo": "Pantalon",
+          "imagen":"Pantalon.png",
+          "descripción": "Pantalon 100% algodón, suave",
+          "caracteristicas":[{
+               "tallas":[
+                    {"id":1, "valor":"XS"},
+                    {"id":2,"valor":"S"},
+                    {"id":3,"valor":"M"},
+                    {"id":4,"valor":"L"},
+                    {"id":5,"valor":"XL"},
+                    {"id":6,"valor":"XXL"}
+                   ],
+               "colores":[
+                   {"idTalla":3,"valor":"Azul","cantidad":3},
+                   {"idTalla":3,"valor":"Negro","cantidad":4},
+                   {"idTalla":3,"valor":"Rojo","cantidad":1},
+                   {"idTalla":1,"valor":"Azul","cantidad":0},
+                   {"idTalla":1,"valor":"Negro","cantidad":10},
+                   {"idTalla":2,"valor":"Violeta","cantidad":3}
+                ]}]
+               }
+]

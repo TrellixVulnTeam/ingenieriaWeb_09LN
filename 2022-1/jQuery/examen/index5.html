@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script>
+        
+          var productos= [{
+    "Id":1,
+    "titulo": "Camiseta",
+    "imagen":"camiseta.png",
+    "descripción": "camiseta 100% algodón, suave",
+    "caracteristicas":[{
+         "tallas":[
+              {"id":1, "valor":"XS"},
+              {"id":2,"valor":"S"},
+              {"id":3,"valor":"M"},
+              {"id":4,"valor":"L"},
+              {"id":5,"valor":"XL"},
+              {"id":6,"valor":"XXL"}
+             ],
+         "colores":[
+             {"idTalla":1,"valor":"Azul","cantidad":3},
+             {"idTalla":1,"valor":"Negro","cantidad":4},
+             {"idTalla":1,"valor":"Rojo","cantidad":1},
+             {"idTalla":2,"valor":"Azul","cantidad":0},
+             {"idTalla":2,"valor":"Negro","cantidad":10},
+             {"idTalla":3,"valor":"Violeta","cantidad":3}]
+          }]},
+          {
+          "Id":2,
+          "titulo": "Pantalon",
+          "imagen":"Pantalon.png",
+          "descripción": "Pantalon 100% algodón, suave",
+          "caracteristicas":[{
+               "tallas":[
+                    {"id":1, "valor":"XS"},
+                    {"id":2,"valor":"S"},
+                    {"id":3,"valor":"M"},
+                    {"id":4,"valor":"L"},
+                    {"id":5,"valor":"XL"},
+                    {"id":6,"valor":"XXL"}
+                   ],
+               "colores":[
+                   {"idTalla":3,"valor":"Azul","cantidad":3},
+                   {"idTalla":3,"valor":"Negro","cantidad":4},
+                   {"idTalla":3,"valor":"Rojo","cantidad":1},
+                   {"idTalla":1,"valor":"Azul","cantidad":0},
+                   {"idTalla":1,"valor":"Negro","cantidad":10},
+                   {"idTalla":2,"valor":"Violeta","cantidad":3}
+                ]}]
+               }];
+
+               document.addEventListener("DOMContentLoaded",function(){
+                    var lista=document.getElementById("productos");
+                    
+                   for(var i=0;i<productos.length;i++){
+                       var etiqueta=document.createElement("li");
+                     
+                       var Talla;
+                       for(var j=0;j<productos[i].caracteristicas[0]["tallas"].length;j++){
+                           
+                            idTalla=productos[i].caracteristicas[0]["tallas"][j].id;
+                            Talla+="<br>"+productos[i].caracteristicas[0]["tallas"][j].valor;
+                            
+                            /*console.log(productos[i].caracteristicas[0]["tallas"][j].valor);
+                            for(var k=0;k<productos[i].caracteristicas[0]["colores"].length;k++){
+                                
+                                console.log("idTalla"+ idTalla +"- "+productos[i].caracteristicas[0]["colores"][k].valor);
+                            }*/
+
+
+                            etiqueta.innerHTML=Talla;
+                            lista.appendChild(etiqueta);
+                       }
+                       
+                            /*etiqueta.innerHTML="Talla: "+ productos[i].caracteristicas[0]["tallas"][j].valor;
+                            Talla=productos[i].caracteristicas[0]["tallas"][j].valor;
+                            var color;
+                            for(var k=0;k<productos[i].caracteristicas[0]["colores"].length;k++){
+                                if(idTalla==productos[i].caracteristicas[0]["colores"][k].idTalla)
+                                    color+=productos[i].caracteristicas[0]["colores"][k].valor;
+                                //console.log(productos[i].caracteristicas[0]["colores"][j].idTalla);
+                            }*/
+                             //etiqueta.innerHTML="Color: "+ color +"Talla:" +Talla;
+                            // etiqueta.innerHTML="<img src=\""+productos[i]["imagen"]+"\"><p>Tallas:"+productos[i]["caracteristicas"]["colores"][j]+"</p>";
+                    
+
+                      
+
+
+                   }
+                    
+
+               });
+
+        </script>
+      </head>
+      <body>
+          <ul id="productos">
+
+          </ul>
+          
+        
+       
+    </body>
+</html>

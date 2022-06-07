@@ -14,7 +14,7 @@ app.use(cors());
 // create application/json parser
 app.use(bodyParser.json());
 //GET
-//app.get('/Artistas',ArtistasLista.GetArtistas);
+app.get('/Artistas', ArtistasLista.GetArtistas);
 app.post('/InsertarArtistas', bodyParser.json(), Insertar.PostArtistas);
 app.listen(configuracion, function () {
     console.log("Conectando al servidor http://" + configuracion.hostname + ":" + configuracion.port);

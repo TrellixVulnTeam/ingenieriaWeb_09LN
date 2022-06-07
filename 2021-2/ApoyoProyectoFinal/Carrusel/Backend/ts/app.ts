@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 
 //GET
-//app.get('/Artistas',ArtistasLista.GetArtistas);
+app.get('/Artistas',ArtistasLista.GetArtistas);
 app.post('/InsertarArtistas',bodyParser.json(),Insertar.PostArtistas);
 
   app.listen(configuracion, () => {

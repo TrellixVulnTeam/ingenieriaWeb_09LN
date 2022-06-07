@@ -3,6 +3,6 @@
         <h2>{{noticia.titulo}}</h2>
         <img src='../../../assets/{{noticia.imagen}}' alt='{{noticia.imagen}}'>
         <p>Autor: {{noticia.autor}} | Fecha {{noticia.fecha}}</p>
-        <button [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" >Ver más</button>
+   <button [routerLink]="['/detalleNoticia',noticia.id]" routerLinkActive="router-link-active" [ngClass]="{azul:Colorboton(noticia.id)=='blue'}">Ver más</button>
     </li>
 </ul>

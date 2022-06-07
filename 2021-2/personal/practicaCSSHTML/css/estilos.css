@@ -1,0 +1,81 @@
+material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.material-icons.red{
+	color: red;
+}
+
+
+h1{
+   text-align: center;
+   font-size: 25px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   animation-name: galeria;
+   animation-duration: 4s;
+}
+
+#galeria{
+	width: 100%;
+}
+
+
+@keyframes galeria{
+     0% {font-size: 12px;}
+     25%{font-size: 14px;}
+     50%{font-size: 22px;}
+     100%{font-size: 25px;}
+}
+
+
+#galeria ul{
+   display: flex;
+   flex-wrap: wrap;
+} 
+
+#galeria ul li{
+	width: 120px;
+	height: 120px;
+	border: 1px solid #000;
+	margin:5px 5px 5px 5px;
+}
+
+#galeria ul li div{
+	background: rgba(0, 0, 0, 0.2);
+	position: relative;
+	top: -30px;
+}
+
+#galeria ul li div .fuente{
+	color: white;
+    margin-top: 4px;
+    position: absolute;
+}
+
+#galeria li img{
+	width: 120px;
+	height: 120px;
+	
+}

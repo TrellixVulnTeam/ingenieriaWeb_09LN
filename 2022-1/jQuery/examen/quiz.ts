@@ -1,0 +1,1 @@
+let cake:str=10;

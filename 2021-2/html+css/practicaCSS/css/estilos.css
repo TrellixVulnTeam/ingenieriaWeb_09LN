@@ -1,0 +1,10 @@
+#parent {display: table;}
+
+#child {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid black;
+    width:250px;
+    height: 200px;
+    padding: 10px;
+}

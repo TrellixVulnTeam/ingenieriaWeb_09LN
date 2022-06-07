@@ -7,7 +7,6 @@ export interface Noticias {
     imagen:string;
     texto:string;
 }
-
 export let ListaNoticias:Array<Noticias>=[
 { id:1,
   idCategoria:1,
@@ -17,8 +16,7 @@ export let ListaNoticias:Array<Noticias>=[
   imagen:"imagen1.png",
   texto: "texto de la noticia"
 },
-
-{ id:2,
+{   id:2,
     idCategoria:2,
     titulo:"Noticia 2",
     autor:"autor noticia 2",

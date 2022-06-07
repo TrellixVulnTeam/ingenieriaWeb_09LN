@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="css/estilos.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </head>
+    <body>
+       <div class="container">
+           <form  id="formulario" class="row g-3 needs-validation" novalidate>
+              <ul>
+                   <li>
+                    <label for="nombrecompleto" class="form-label">Nombre Completo</label>
+                    <input type="tel" class="form-control" id="nombrecompleto" placeholder="Nombre Completo" maxlength="9" required>
+                      <div class="valid-feedback">
+                        El nombre está bien
+                      </div>
+                      <div class="invalid-feedback">
+                         El nombre debe ser obligatorio
+                      </div>
+                   </li>
+                   <li>
+                     <label for="rut" class="form-label">RUT</label>
+                      <input type="text" class="form-control" id="rut" placeholder="rut" pattern="[A-Z0-9]+" required maxlength="">
+                      <div class="valid-feedback">
+                        El formato de rut está bien
+                      </div>
+                      <div class="invalid-feedback">
+                         El rut no tiene el formato adecuado
+                      </div>
+                   </li>
+
+                   <li>
+                    <button class="btn btn-primary" type="submit">Enviar Datos</button>
+                   </li>
+                   
+              </ul>
+            </form>
+
+       </div>
+        <script src="js/inicio.js" async></script>
+       <!--<script data-main="js/inicio" src="js/require-jquery.js"></script>-->
+    
+
+       </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Galería</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+	<!--fuentes iconos-->
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+
+	<!--fuentes google font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+	<!--incluyendo librerías externas-->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+   <!--incluir javascript-->
+  <script defer type="text/javascript" src="js/funciones.js"></script>
+<!--
+    En los sitio web los scripts suelen ser + pesados que los html, el tamaño de la descarga es grande y el tiempo de procesamiento mayor.
+
+    Cuando el navegador carga el html y se encuentra con una etiqueta 
+    <script> </script>, no puede continuar construyendo el DOM. Debe ejecutar el script en el momento. Lo mismo sucede con los scripts externos. Por lo que, el navegador tiene que esperar hasta que el script sea descargado, ejecutarlo y solo después procesar el resto de la página. 
+
+    Problemas: 
+    1- Los scripts no pueden ver los elementos DOM que se encuentran debajo de él por lo que no pueden agregar controladores de eventos. 
+    2- Si hay un script muy pesado en la parte superior de la página, este bloquea la página. Los usuarios no pueden ver el contenido de la página hasta que se descargue  y se ejecute. 
+
+    dos atributos que resuelven esto defer y async. 
+
+    defer: indica al navegador que no espere por el script. El script se ejecuta solo cuando el DOM esta listo. 
+
+    async: similar defer. 
+
+
+-->
+
+
+
+
+</head>
+<body>
+    <!--<h1>Galería de Arte</h1>-->
+    <h1 class="animate__animated animate__bounce">Galería de Arte</h1>
+   <div id="galeria">
+        <ul>
+           <li>
+              <img src='imgs/1.png'>
+               <div id='corazon1'><span class="material-icons red">favorite</span><span class="fuente">a</span></div>
+           </li>
+
+            <li>
+              <img src='imgs/2.png'>
+               <div><span class="material-icons red">favorite</span><span class="fuente">Foto 2</span></div>
+           </li>
+            <li>
+              <img src='imgs/3.png'>
+              <div><span class="material-icons red">favorite</span><span class="fuente">Foto 3</span></div>
+           </li>
+           <li>
+               <img src='imgs/4.png'>
+               <div><span class="material-icons red">favorite</span><span class="fuente">Foto 4</span></div>
+           </li>
+            <li>
+              <img src='imgs/5.png'>
+              <div><span class="material-icons red">favorite</span><span class="fuente">Foto 5</span></div>
+           </li>
+             <li>
+              <img src='imgs/6.png'>
+              <div><span class="material-icons red">favorite</span><span class="fuente">Foto 6</span></div>
+           </li>
+             <li>
+              <img src='imgs/7.png'>
+              <div><span class="material-icons red">favorite</span><span class="fuente">Foto 7</span></div>
+           </li>
+        </ul>
+   </div>
+</body>
+</html>

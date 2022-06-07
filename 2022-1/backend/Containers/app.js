@@ -9,6 +9,7 @@ var configuracion = {
 router.get('/', function (req, res) {
     res.json("hola mundo");
 });
+
 router.post('/login', function (req, res) {
     //const id=req.body.id;
     res.json("metodo post");

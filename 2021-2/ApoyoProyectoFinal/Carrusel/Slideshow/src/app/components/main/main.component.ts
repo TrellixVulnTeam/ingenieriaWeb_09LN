@@ -16,7 +16,7 @@ export class MainComponent implements OnInit,OnChanges,OnDestroy,DoCheck{
   }
 
   ngOnInit(): void {
-       /*this.http.GetArtistas().subscribe(datos=>{
+       this.http.GetArtistas().subscribe(datos=>{
 
              for(let i=0;i<datos.items.length;i++){
                 //console.log(datos.items[i]);
@@ -25,11 +25,11 @@ export class MainComponent implements OnInit,OnChanges,OnDestroy,DoCheck{
              }
              console.log(this.ListaArtista.length);
   
-       });*/
-
-       this.http.POSTArtistas().subscribe(datos=>{
-            console.log(datos);
        });
+
+       /*this.http.POSTArtistas().subscribe(datos=>{
+            console.log(datos);
+       });*/
        
        
   }
