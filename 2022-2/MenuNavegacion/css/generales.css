@@ -1,0 +1,46 @@
+/**cabecera**/
+
+.nav-link{
+   color:#ffffff;
+
+}
+
+.nav-link.active{
+    color:rgb(217, 147, 41) !important;
+}
+.nav-link:hover{
+    color:rgb(217, 147, 41);
+}
+
+
+.btn-outline-success{
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.btn-outline-success:hover{
+    background-color: rgb(217, 147, 41);
+    border-color: rgb(217, 147, 41);
+}
+
+footer{
+    background-color: black;
+    color:white;
+    text-align: center;
+    height:120px;
+}
+
+footer ul{
+     list-style-type: none;
+     display:flex;
+}
+
+footer ul li{
+    margin:10px;
+}
+
+footer li a{
+    text-decoration: none;
+    color:white;
+}
+
