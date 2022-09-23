@@ -1,0 +1,8 @@
+<form [formGroup]="formulario" (ngSubmit)="EnviarDatos()" >
+    <label>Nombre</label><input type="text" formControlName="nombre" placeholder="Nombre">
+    <label>Correo Electronico</label><input type="email" formControlName="email" placeholder="Nombre">
+    <button type="submit">Enviar</button>
+</form>
+
+
+

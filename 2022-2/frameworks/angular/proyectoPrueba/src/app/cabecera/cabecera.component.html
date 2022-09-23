@@ -1,0 +1,16 @@
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['/']">Inicio</a>
+      <ng-template ngbNavContent>Inicio</ng-template>
+    </li>
+
+    <li ngbNavItem>
+      <a ngbNavLink [routerLink]="['producto']">Productos</a>
+      <ng-template ngbNavContent>Productos</ng-template>
+    </li>
+    <li ngbNavItem>
+        <a ngbNavLink [routerLink]="['contacto']">Contactenos</a>
+        <ng-template ngbNavContent>Contactenos</ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>

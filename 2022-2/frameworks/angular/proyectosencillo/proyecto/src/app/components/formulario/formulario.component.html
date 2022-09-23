@@ -1,0 +1,36 @@
+<form [formGroup]="formulario" novalidate>
+<div class="form-group">
+      
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" formControlName="nombre" placeholder="Nombre completo">
+      <small  class="form-text text-muted" *ngIf="nombre.hasError('required') && nombre.touched">Campo obligatorio</small>
+      <small  class="form-text text-muted" *ngIf="nombre.hasError('minlength') && nombre.touched">Tamaño debe ser mayor a 5</small>
+
+    </div>  
+<div class="form-group">  
+    <label>Rut</label>
+    <input type="text" class="form-control" formControlName="rut" placeholder="rut">
+    <small  class="form-text text-muted" *ngIf="rut.hasError('required') && rut.touched">Campo obligatorio</small>
+</div> 
+
+<div class="form-group"> 
+    <label>País</label>
+    <select class="form-control" formControlName="pais" (change)="cargarCiudad($event)">
+     <option value="-1">Seleccione la opción</option>
+      <option *ngFor="let item of paises; let indice=index"  value="{{indice}}">{{item}}</option>
+    </select>
+    <small  class="form-text text-muted" *ngIf="pais.hasError('required') && pais.touched">Campo obligatorio</small>
+</div> 
+
+<div class="form-group"> 
+    <label>Ciudad</label>
+    <select class="form-control" formControlName="ciudad">
+     <option>Seleccione la ciudad</option>
+      <option *ngFor="let item of seleccionar">{{item}}</option>
+    </select>
+    <small  class="form-text text-muted" *ngIf="pais.hasError('required') && pais.touched">Campo obligatorio</small>
+</div> 
+
+<button type="submit" [disabled]="formulario.invalid">Enviar Datos</button>
+
+</form>

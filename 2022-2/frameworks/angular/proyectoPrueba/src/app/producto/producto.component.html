@@ -1,0 +1,16 @@
+<div class="card-columns">
+    <div class="card" *ngFor="let item of Listaproducto; let i=index;">
+      <img src="..." class="card-img-top" [alt]="item.nombre">
+      <div class="card-body">
+        <img [src]="item.img">
+        <h5 class="card-title">{{item.descripcion}}</h5>
+        <p class="card-text">Precio: {{item.precio}}</p>
+      </div>
+      <a [routerLink]="['/detalleproducto',i]">Ver +</a>
+      <a [routerLink]="['/detalleproducto',i,item.nombre]">Ver +</a>
+      
+    </div>
+
+    
+    
+  </div>
