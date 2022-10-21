@@ -1,0 +1,21 @@
+[
+{
+    "id":1,
+    "nombre":"Foto 1",
+    "src":"img/1.png",
+    "descripcion":"descripción"
+},
+{
+    "id":2,
+    "nombre":"Foto 1",
+    "src":"img/2.png",
+    "descripcion":"descripción"
+},
+{
+    "id":3,
+    "nombre":"Foto 1",
+    "src":"img/3.png",
+    "descripcion":"descripción"
+}
+
+]
