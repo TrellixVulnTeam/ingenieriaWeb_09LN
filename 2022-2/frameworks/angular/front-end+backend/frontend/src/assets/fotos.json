@@ -3,18 +3,51 @@
     "id":1,
     "nombre":"Foto 1",
     "src":"img/1.png",
+    "usuarios":[
+        {
+            "id":1,
+            "Nusuario":"pepo"
+        },
+        { 
+            "id": 2,
+            "Nusuario":"pepa"
+
+        }
+    ],
     "descripcion":"descripción"
 },
 {
     "id":2,
     "nombre":"Foto 1",
     "src":"img/2.png",
+    "usuarios":[
+        {
+            "id":1,
+            "Nusuario":"pepo1"
+        },
+        { 
+            "id": 2,
+            "Nusuario":"pepa1"
+
+        }
+    ],
     "descripcion":"descripción"
 },
 {
     "id":3,
     "nombre":"Foto 1",
     "src":"img/3.png",
+    "usuarios":[
+        {
+            "id":1,
+            "Nusuario":"pepo2"
+        },
+        { 
+            "id": 2,
+            "Nusuario":"pepa2"
+
+        }
+    ],
     "descripcion":"descripción"
 }
 

@@ -1,7 +1,14 @@
 <ul>
     <li *ngFor="let item of foticos">
-        {{item.id}}
-        {{item.nombre}}
+        ID:{{item.id}}
+        Nombre:{{item.nombre}}
+        
+        <ul>
+            <li *ngFor="let item2 of item.usuarios|usuarios">
+                {{item2.Nusuario}}
+            </li>
+
+        </ul>
      <img src="../../assets/{{item.src}}" />
 
     </li>

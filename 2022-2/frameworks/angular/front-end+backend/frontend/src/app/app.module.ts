@@ -8,12 +8,14 @@ import { FormularioComponent } from './formulario/formulario.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { FotosComponent } from './fotos/fotos.component';
 import {HttpClientModule} from '@angular/common/http';
+import { UsuariosPipe } from './pipes/usuarios.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
-    FotosComponent
+    FotosComponent,
+    UsuariosPipe
   ],
   imports: [
     BrowserModule,

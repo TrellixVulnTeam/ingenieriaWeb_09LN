@@ -18,6 +18,7 @@ export class FotosComponent implements OnInit {
     this.galeria.getJSON().subscribe(datos=>{
       this.foticos=datos;
       
+      
     })
   }
 
