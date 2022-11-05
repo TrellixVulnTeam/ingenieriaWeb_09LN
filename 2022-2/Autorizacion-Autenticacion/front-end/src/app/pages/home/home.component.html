@@ -1,0 +1,34 @@
+<div *ngIf="mensaje!=''" class="alert alert-success">{{mensaje}}</div>
+  
+<form [formGroup]="formulario" (ngSubmit)="ValidarLogin()" *ngIf="!logueado">
+  <ul>
+    <li>
+     <div *ngIf="usuario.errors && usuario.hasError('required') && formulario.touched">
+       <div class="alert alert-danger" role="alert">
+         * Correo obligatorio
+       </div>
+     </div>
+     <div class="alert alert-danger" *ngIf="usuario.errors && usuario.hasError('email')">
+       Formato de Correo electrónico no es el correcto
+     </div>
+      <input type='email' formControlName="usuario" placeholder="Usuario" class="form-control">
+    </li>
+    <li>
+        <div *ngIf="password.errors && password.hasError('required') && formulario.touched">
+            <div class="alert alert-danger" role="alert">
+              * Password obligatorio
+            </div>
+          </div>
+          <div class="alert alert-danger" *ngIf="usuario.errors && usuario.hasError('email')">
+            Formato de password no es el correcto, el password debe estar compuesto por mayúsculas,minúsculas y números
+          </div>
+     <input #x type='password' formControlName="password" placeholder="Password" class="form-control">
+     <a class="navbar-brand" href="#" (click)="x.type=x.type=='password'?'text':'password'">
+     <span class="material-icons">visibility</span>
+     </a>
+    </li>
+   <li>
+     <button type="submit" [disabled]="formulario.invalid" >Iniciar Sessión</button>
+   </li>
+ </ul>
+</form>
